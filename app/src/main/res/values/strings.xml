@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Занятость аудиторий</string>
+    <string name="desc">На главном экране расположена кнопка: "Загрузить аудитории". При нажатии на неё можно получить доступ к актуальной занятости аудиторий.</string>
+
+    <string name="lesson_1">Пара 1\n8:30-9:50</string>
+    <string name="lesson_2">Пара 2\n10:00-11:20"</string>
+    <string name="lesson_3">Пара 3\n11:40-13:00"</string>
+    <string name="lesson_4">Пара 4\n13:20-14:40</string>
+    <string name="lesson_5">Пара 5\n15:00-16:20</string>
+    <string name="lesson_6">Пара 6\n16:30-17:50</string>
+</resources>
