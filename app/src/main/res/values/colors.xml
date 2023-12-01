@@ -39,12 +39,12 @@
     <color name="md_theme_light_scrim">#000000</color>
     <color name="md_theme_dark_primary">#ADC6FF</color>
     <color name="md_theme_dark_onPrimary">#002E69</color>
-    <color name="md_theme_dark_primaryContainer">#0E448E</color>
+    <color name="md_theme_dark_primaryContainer">#FFFFFF</color>
     <color name="md_theme_dark_onPrimaryContainer">#D8E2FF</color>
-    <color name="md_theme_dark_secondary">#C1C1FF</color>
+    <color name="md_theme_dark_secondary">#FFFFFF</color>
     <color name="md_theme_dark_onSecondary">#222181</color>
     <color name="md_theme_dark_secondaryContainer">#3A3B98</color>
-    <color name="md_theme_dark_onSecondaryContainer">#E1DFFF</color>
+    <color name="md_theme_dark_onSecondaryContainer">#FFFFFF</color>
     <color name="md_theme_dark_tertiary">#4FD8EB</color>
     <color name="md_theme_dark_onTertiary">#00363D</color>
     <color name="md_theme_dark_tertiaryContainer">#004F58</color>
@@ -56,15 +56,15 @@
     <color name="md_theme_dark_background">#4D767E</color>
     <color name="md_theme_dark_onBackground">#A6EEFF</color>
     <color name="md_theme_dark_surface">#001F25</color>
-    <color name="md_theme_dark_onSurface">#A6EEFF</color>
+    <color name="md_theme_dark_onSurface">#FFFFFF</color>
     <color name="md_theme_dark_surfaceVariant">#44474F</color>
     <color name="md_theme_dark_onSurfaceVariant">#C4C6D0</color>
-    <color name="md_theme_dark_outline">#8E9099</color>
+    <color name="md_theme_dark_outline">#FAFAFA</color>
     <color name="md_theme_dark_inverseOnSurface">#001F25</color>
     <color name="md_theme_dark_inverseSurface">#A6EEFF</color>
     <color name="md_theme_dark_inversePrimary">#315DA8</color>
     <color name="md_theme_dark_shadow">#000000</color>
-    <color name="md_theme_dark_surfaceTint">#ADC6FF</color>
-    <color name="md_theme_dark_outlineVariant">#44474F</color>
+    <color name="md_theme_dark_surfaceTint">#FFFFFF</color>
+    <color name="md_theme_dark_outlineVariant">#FFFFFF</color>
     <color name="md_theme_dark_scrim">#000000</color>
 </resources>

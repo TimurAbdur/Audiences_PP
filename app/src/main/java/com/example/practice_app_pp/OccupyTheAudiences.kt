@@ -44,21 +44,46 @@ class OccupyTheAudiences : AppCompatActivity() {
         if(args != null) {
             val teacher = findViewById<EditText>(R.id.teacher)
             if(teacher.text.toString() != "") {
-                val numberLesson = args.getString("numberLesson")
-                val numberAudience = args.getString("numberAudience")
-                sendScheduleToFirebase(Audience(numberAudience!!.toInt(), teacher.text.toString()), numberAudience!!.toInt(),numberLesson!!.toInt())
-                Toast.makeText(applicationContext, "Аудитория номер ${numberAudience} успешно занята!", Toast.LENGTH_SHORT).show()
+                val containsNumbers = teacher.text.any { it.isDigit() }
+                if (!containsNumbers) {
+                    if(teacher.text.length >= 3) {
+                        val firstChar = teacher.text.firstOrNull()
+                        if(firstChar!!.isUpperCase()) {
+                            val numberLesson = args.getString("numberLesson")
+                            val numberAudience = args.getString("numberAudience")
+                            sendScheduleToFirebase(Audience(numberAudience!!.toInt(), teacher.text.toString()), numberAudience!!.toInt(),numberLesson!!.toInt())
+                            Toast.makeText(applicationContext, "Аудитория номер ${numberAudience} успешно занята!", Toast.LENGTH_SHORT).show()
 
-                var data: Intent = Intent()
-                data.putExtra("idTextView", args.getString("word")+"${numberAudience}")
-                data.putExtra("numberAudience", "${numberAudience}")
-                data.putExtra("teacher", "\n${teacher.text}")
-                setResult(RESULT_OK, data)
-                finish()
+                            var data: Intent = Intent()
+                            data.putExtra("idTextView", args.getString("word")+"${numberAudience}")
+                            data.putExtra("numberAudience", "${numberAudience}")
+                            data.putExtra("teacher", "\n${teacher.text}")
+                            setResult(RESULT_OK, data)
+                            finish()
+                        }
+                        else {
+                            Toast.makeText(applicationContext, "Фамилия преподавателя должна начинаться с заглавной буквы!", Toast.LENGTH_LONG).show()
+                        }
+                    }
+                    else {
+                        Toast.makeText(applicationContext, "Фамилия преподавателя должна состоят минимум из 3 символов!", Toast.LENGTH_LONG).show()
+                    }
+                }
+                else {
+                    Toast.makeText(applicationContext, "Фамилия преподавателя не может содержать цифры!", Toast.LENGTH_SHORT).show()
+                }
             }
             else {
                 Toast.makeText(applicationContext, "Ошибка! Вы не ввели фамилию преподавателя!", Toast.LENGTH_LONG).show()
             }
+        }
+    }
+    fun isUpperCaseCyrillic(input: String): Boolean {
+        val firstChar = input.firstOrNull()
+        return if (firstChar != null) {
+            firstChar.isUpperCase() && firstChar.isLetter()
+        } else {
+            false
         }
     }
 }

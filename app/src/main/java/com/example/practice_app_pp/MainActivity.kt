@@ -49,8 +49,6 @@ class MainActivity : AppCompatActivity() {
         writeShelderAtTextView()
         //Отображает пару и список в зависимости от времени
         showListByTime()
-        //Добавляет textView событые двойного клика
-        addObrEvenForBtn()
 
         animationLoadBtn(findViewById<Button>(R.id.loadSchedule))
         animationTitle(findViewById<TextView>(R.id.textViewTitle))
@@ -638,6 +636,9 @@ class MainActivity : AppCompatActivity() {
         doWriteAudienceAtTextView(lessonNum6,21,findViewById(R.id.f44))//Аудитория 44
         doWriteAudienceAtTextView(lessonNum6,22,findViewById(R.id.f45))//Аудитория 45
         doWriteAudienceAtTextView(lessonNum6,23,findViewById(R.id.f46))//Аудитория 46
+
+        //Добавляет textView событые двойного клика
+        addObrEvenForBtn()
     }
     fun doWriteAudienceAtTextView(lessonArray : Array<Audience>,num : Int, texyView : TextView) {
         val builder = SpannableStringBuilder()
@@ -689,26 +690,31 @@ class MainActivity : AppCompatActivity() {
             view.isEnabled = false
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_1)
             findViewById<ScrollView>(R.id.audienceWrap1).visibility = View.VISIBLE
+            findViewById<ScrollView>(R.id.audienceWrap1).smoothScrollTo(0, 0)
             findViewById<ScrollView>(R.id.audienceWrap2).visibility = View.INVISIBLE
         }
         else if(numOfTable == 2) {
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_2)
             findViewById<ScrollView>(R.id.audienceWrap2).visibility = View.VISIBLE
+            findViewById<ScrollView>(R.id.audienceWrap2).smoothScrollTo(0, 0)
             findViewById<ScrollView>(R.id.audienceWrap3).visibility = View.INVISIBLE
         }
         else if(numOfTable == 3) {
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_3)
             findViewById<ScrollView>(R.id.audienceWrap3).visibility = View.VISIBLE
+            findViewById<ScrollView>(R.id.audienceWrap3).smoothScrollTo(0, 0)
             findViewById<ScrollView>(R.id.audienceWrap4).visibility = View.INVISIBLE
         }
         else if(numOfTable == 4) {
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_4)
             findViewById<ScrollView>(R.id.audienceWrap4).visibility = View.VISIBLE
+            findViewById<ScrollView>(R.id.audienceWrap4).smoothScrollTo(0, 0)
             findViewById<ScrollView>(R.id.audienceWrap5).visibility = View.INVISIBLE
         }
         else if(numOfTable == 5) {
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_5)
             findViewById<ScrollView>(R.id.audienceWrap5).visibility = View.VISIBLE
+            findViewById<ScrollView>(R.id.audienceWrap5).smoothScrollTo(0, 0)
             findViewById<ScrollView>(R.id.audienceWrap6).visibility = View.INVISIBLE
         }
     }
@@ -721,27 +727,32 @@ class MainActivity : AppCompatActivity() {
         if(numOfTable == 2) {
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_2)
             findViewById<ScrollView>(R.id.audienceWrap2).visibility = View.VISIBLE
+            findViewById<ScrollView>(R.id.audienceWrap2).smoothScrollTo(0, 0)
             findViewById<ScrollView>(R.id.audienceWrap1).visibility = View.INVISIBLE
         }
         else if(numOfTable == 3) {
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_3)
             findViewById<ScrollView>(R.id.audienceWrap3).visibility = View.VISIBLE
+            findViewById<ScrollView>(R.id.audienceWrap3).smoothScrollTo(0, 0)
             findViewById<ScrollView>(R.id.audienceWrap2).visibility = View.INVISIBLE
         }
         else if(numOfTable == 4) {
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_4)
             findViewById<ScrollView>(R.id.audienceWrap4).visibility = View.VISIBLE
+            findViewById<ScrollView>(R.id.audienceWrap4).smoothScrollTo(0, 0)
             findViewById<ScrollView>(R.id.audienceWrap3).visibility = View.INVISIBLE
         }
         else if(numOfTable == 5) {
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_5)
             findViewById<ScrollView>(R.id.audienceWrap5).visibility = View.VISIBLE
+            findViewById<ScrollView>(R.id.audienceWrap5).smoothScrollTo(0, 0)
             findViewById<ScrollView>(R.id.audienceWrap4).visibility = View.INVISIBLE
         }
         else if(numOfTable == 6) {
             view.isEnabled = false
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_6)
             findViewById<ScrollView>(R.id.audienceWrap6).visibility = View.VISIBLE
+            findViewById<ScrollView>(R.id.audienceWrap6).smoothScrollTo(0, 0)
             findViewById<ScrollView>(R.id.audienceWrap5).visibility = View.INVISIBLE
         }
     }
