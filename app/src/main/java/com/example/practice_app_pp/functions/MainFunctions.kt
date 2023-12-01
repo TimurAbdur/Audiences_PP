@@ -1,6 +1,12 @@
 package schedule
 
+import android.animation.ObjectAnimator
+import android.content.res.Configuration
+import android.widget.Button
+import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.practice_app_pp.Audience
+import com.example.practice_app_pp.R
 import com.google.firebase.database.FirebaseDatabase
 
 fun scheduling() {
@@ -306,5 +312,28 @@ fun sendScheduleToFirebase(audience: Audience, id: Int, numberLesson : Int) {
     val reference = database.getReference("schedule")
 
     reference.child(numberLesson.toString()).child(id.toString()).setValue(audience)
+}
+
+fun animationLoadBtn(button : Button) {
+    val objectAnimator = ObjectAnimator.ofFloat(button, "translationY", 0f)
+    objectAnimator.duration = 1200
+    objectAnimator.startDelay = 200
+    objectAnimator.start()
+}
+
+fun animationTitle(textView : TextView) {
+    val objectAnimator = ObjectAnimator.ofFloat(textView, "translationY", 0f)
+    objectAnimator.duration = 1500
+    objectAnimator.start()
+    val objectAnimator2 = ObjectAnimator.ofFloat(textView, "rotationX", 0f)
+    objectAnimator2.duration = 900
+    objectAnimator2.startDelay = 500
+    objectAnimator2.start()
+}
+
+fun animationBtn(button : Button) {
+    val objectAnimator = ObjectAnimator.ofFloat(button, "translationX", 0f)
+    objectAnimator.duration = 1200
+    objectAnimator.start()
 }
 

@@ -11,8 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:rotationX="60"
         android:text="Список аудиторий"
         android:textSize="28sp"
+        android:translationY="-120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +39,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/border"
-        android:paddingTop="10dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -48,7 +49,7 @@
             android:id="@+id/tableLayout"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="22dp"
             android:orientation="vertical">
 
             <TableRow
@@ -317,8 +318,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="30dp"
-                android:layout_marginBottom="40dp"
-                android:gravity="center">
+                android:gravity="center"
+                android:paddingBottom="40dp">
 
                 <TextView
                     android:id="@+id/a44"
@@ -370,7 +371,7 @@
             android:id="@+id/tableLayout2"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="22dp"
             android:orientation="vertical">
 
             <TableRow
@@ -693,7 +694,7 @@
             android:id="@+id/tableLayou3"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="22dp"
             android:orientation="vertical">
 
             <TableRow
@@ -1016,7 +1017,7 @@
             android:id="@+id/tableLayou4"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="22dp"
             android:orientation="vertical">
 
             <TableRow
@@ -1339,7 +1340,7 @@
             android:id="@+id/tableLayou5"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="22dp"
             android:orientation="vertical">
 
             <TableRow
@@ -1662,7 +1663,7 @@
             android:id="@+id/tableLayou6"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="22dp"
             android:orientation="vertical">
 
             <TableRow
@@ -1995,14 +1996,16 @@
 
     <Button
         android:id="@+id/loadSchedule"
-        android:layout_width="350dp"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:onClick="getAudienceFromTextView"
         android:paddingTop="12dp"
         android:paddingBottom="10dp"
-        android:text="Загрузить аудотрии"
+        android:text="Загрузить аудитории"
         android:textSize="20sp"
+        android:translationY="100dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -2018,7 +2021,8 @@
         android:paddingBottom="12dp"
         android:text="Назад"
         android:textSize="18sp"
-        android:visibility="invisible"
+        android:translationX="-250dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -2033,7 +2037,8 @@
         android:paddingBottom="12dp"
         android:text="Вперед"
         android:textSize="18sp"
-        android:visibility="invisible"
+        android:translationX="250dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
