@@ -6,9 +6,11 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import schedule.animationLoadBtn
 import schedule.sendScheduleToFirebase
 
 class OccupyTheAudiences : AppCompatActivity() {
@@ -16,7 +18,7 @@ class OccupyTheAudiences : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_occupy_the_audiences)
         setTitle("Занять аудиторию")
-
+        animationLoadBtn(findViewById<Button>(R.id.occupBtn))
         val args : Bundle? = intent.extras
         if(args != null) {
             val numberLesson = args.getString("numberLesson")

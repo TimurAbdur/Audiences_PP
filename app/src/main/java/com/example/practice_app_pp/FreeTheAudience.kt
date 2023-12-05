@@ -6,9 +6,11 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.CheckBox
 import android.widget.TextView
 import android.widget.Toast
+import schedule.animationLoadBtn
 import schedule.sendScheduleToFirebase
 
 class FreeTheAudience : AppCompatActivity() {
@@ -16,6 +18,7 @@ class FreeTheAudience : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_free_the_audience)
         setTitle("Освободить аудиторию")
+        animationLoadBtn(findViewById<Button>(R.id.freeBtn))
         val args : Bundle? = intent.extras
         if(args != null) {
             val numberLesson = args.getString("numberLesson")

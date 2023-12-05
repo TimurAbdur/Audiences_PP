@@ -317,7 +317,6 @@ fun sendScheduleToFirebase(audience: Audience, id: Int, numberLesson : Int) {
 fun animationLoadBtn(button : Button) {
     val objectAnimator = ObjectAnimator.ofFloat(button, "translationY", 0f)
     objectAnimator.duration = 1200
-    objectAnimator.startDelay = 200
     objectAnimator.start()
 }
 

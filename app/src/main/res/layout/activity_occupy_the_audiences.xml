@@ -7,7 +7,7 @@
     tools:context=".OccupyTheAudiences">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/occupBtn"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
@@ -16,6 +16,7 @@
         android:paddingBottom="10dp"
         android:text="Занять аудиторию"
         android:textSize="20dp"
+        android:translationY="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
