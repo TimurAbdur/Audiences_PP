@@ -34,7 +34,9 @@ import schedule.animationBtn
 import schedule.animationLoadBtn
 import schedule.animationTitle
 import java.lang.Exception
-
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
 
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
@@ -42,16 +44,45 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.Theme_Practice_app_PP)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         whichTheme(findViewById<ConstraintLayout>(R.id.constraintLayout))
         setTitle("Главное меню")
-        //Отображает списки на каждую пару
-        writeShelderAtTextView()
-        //Отображает пару и список в зависимости от времени
-        showListByTime()
-
+        checkInternetConnect(findViewById(R.id.loadSchedule))
+    }
+    var checkConnect : Int = 0
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun checkInternetConnect(view: View) {
+        val loadBtn : Button = view as Button
         animationLoadBtn(findViewById<Button>(R.id.loadSchedule))
-        animationTitle(findViewById<TextView>(R.id.textViewTitle))
+        if(isInternetConnected(this)) {
+            if(checkConnect > 0) {
+                Toast.makeText(applicationContext, "Подключение к интернету восстановлено!",Toast.LENGTH_SHORT).show()
+            }
+            findViewById<TextView>(R.id.textViewOnMain).text = getString(R.string.desc)
+            loadBtn.text = "Загрузить расписание"
+            loadBtn.setOnClickListener(::getAudienceFromTextView)
+            //Отображает списки на каждую пару
+            writeShelderAtTextView()
+            //Отображает пару и список в зависимости от времени
+            showListByTime()
+        }
+        else {
+            if(checkConnect > 0) {
+                Toast.makeText(applicationContext, "Подключение к интернету всё ещё отсутствует!",Toast.LENGTH_SHORT).show()
+            }
+            checkConnect++
+
+            loadBtn.text = "Проверить подключение"
+            loadBtn.setOnClickListener(::checkInternetConnect)
+            findViewById<TextView>(R.id.textViewOnMain).text = "К сожалению, отсутствует подключение к интернету. Пожалуйста, проверьте свое подключение и перезайдите в приложение."
+        }
+    }
+
+    fun isInternetConnected(context: Context): Boolean {
+        val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val network = connectivityManager.activeNetwork
+        val networkCapabilities = connectivityManager.getNetworkCapabilities(network)
+
+        return networkCapabilities?.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET) == true
     }
 
     fun whichTheme(cons : ConstraintLayout) {
@@ -469,6 +500,7 @@ class MainActivity : AppCompatActivity() {
             val objectAnimator = ObjectAnimator.ofFloat(view as Button, "translationY", 200f)
             objectAnimator.duration = 800
             objectAnimator.start()
+            animationTitle(findViewById<TextView>(R.id.textViewTitle))
 
             writeAudienceAtTextView()
         }
@@ -645,7 +677,7 @@ class MainActivity : AppCompatActivity() {
         val firstPart = lessonArray[num].numberAudience.toString() + "\n"
         val firstSpannable = SpannableString(firstPart)
         firstSpannable.setSpan(
-            AbsoluteSizeSpan(24, true),
+            AbsoluteSizeSpan(26, true),
             0,
             firstPart.length,
             Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
@@ -759,30 +791,46 @@ class MainActivity : AppCompatActivity() {
 
     //Вспомогательные функции
     //Отображается нужный список в зависимости от времени
+    var isLessonOver : Array<Boolean> = arrayOf(false,false,false,false,false,false)
     @RequiresApi(Build.VERSION_CODES.O)
     fun showListByTime() {
         val currentTime = LocalTime.now()// текущее время
         findViewById<ScrollView>(R.id.audienceWrap1).visibility = View.INVISIBLE
         if (currentTime.isAfter(LocalTime.of(9, 50)) && currentTime.isBefore(LocalTime.of(11, 20))) {
+            isLessonOver[0] = true
             numOfTable = 2
             findViewById<ScrollView>(R.id.audienceWrap2).visibility = View.VISIBLE
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_2)
         } else if (currentTime.isAfter(LocalTime.of(11, 20)) && currentTime.isBefore(LocalTime.of(13, 0))) {
+            isLessonOver[0] = true
+            isLessonOver[1] = true
             numOfTable = 3
             findViewById<ScrollView>(R.id.audienceWrap3).visibility = View.VISIBLE
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_3)
         }
         else if (currentTime.isAfter(LocalTime.of(13, 0)) && currentTime.isBefore(LocalTime.of(14, 40))) {
+            isLessonOver[0] = true
+            isLessonOver[1] = true
+            isLessonOver[2] = true
             numOfTable = 4
             findViewById<ScrollView>(R.id.audienceWrap4).visibility = View.VISIBLE
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_4)
         }
         else if (currentTime.isAfter(LocalTime.of(14, 40)) && currentTime.isBefore(LocalTime.of(16, 20))) {
+            isLessonOver[0] = true
+            isLessonOver[1] = true
+            isLessonOver[2] = true
+            isLessonOver[3] = true
             numOfTable = 5
             findViewById<ScrollView>(R.id.audienceWrap5).visibility = View.VISIBLE
             findViewById<TextView>(R.id.textViewNumberLesson).text = getString(R.string.lesson_5)
         }
         else if (currentTime.isAfter(LocalTime.of(16, 20)) && currentTime.isBefore(LocalTime.of(17, 50))) {
+            isLessonOver[0] = true
+            isLessonOver[1] = true
+            isLessonOver[2] = true
+            isLessonOver[3] = true
+            isLessonOver[4] = true
             numOfTable = 6
             findViewById<Button>(R.id.forwardBtn).isEnabled = false
             findViewById<ScrollView>(R.id.audienceWrap6).visibility = View.VISIBLE
@@ -1024,19 +1072,24 @@ class MainActivity : AppCompatActivity() {
                 if (event.action == MotionEvent.ACTION_UP) {
                     val clickTime = System.currentTimeMillis()
                     if (clickTime - lastClickTime < 500) {
-                        if(findViewById<TextView>(idTextView).currentTextColor == getColor(R.color.red)) {
-                            val intent : Intent = Intent(this@MainActivity, FreeTheAudience::class.java)
-                            intent.putExtra("numberLesson", numberLesson)
-                            intent.putExtra("word", word)
-                            intent.putExtra("numberAudience", numberAudience)
-                            mStartForResult?.launch(intent)
+                        if(isLessonOver[numberLesson.toInt() - 1] == false) {
+                            if(findViewById<TextView>(idTextView).currentTextColor == getColor(R.color.red)) {
+                                val intent : Intent = Intent(this@MainActivity, FreeTheAudience::class.java)
+                                intent.putExtra("numberLesson", numberLesson)
+                                intent.putExtra("word", word)
+                                intent.putExtra("numberAudience", numberAudience)
+                                mStartForResult?.launch(intent)
+                            }
+                            else {
+                                val intent : Intent = Intent(this@MainActivity, OccupyTheAudiences::class.java)
+                                intent.putExtra("numberLesson", numberLesson)
+                                intent.putExtra("word", word)
+                                intent.putExtra("numberAudience", numberAudience)
+                                mStartForResult2?.launch(intent)
+                            }
                         }
                         else {
-                            val intent : Intent = Intent(this@MainActivity, OccupyTheAudiences::class.java)
-                            intent.putExtra("numberLesson", numberLesson)
-                            intent.putExtra("word", word)
-                            intent.putExtra("numberAudience", numberAudience)
-                            mStartForResult2?.launch(intent)
+                            Toast.makeText(applicationContext, "Пара уже прошла! Занять/освободить аудиторию невозможно!", Toast.LENGTH_SHORT).show()
                         }
                     }
                     lastClickTime = clickTime
