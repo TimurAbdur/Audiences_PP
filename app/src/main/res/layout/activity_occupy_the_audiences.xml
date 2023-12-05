@@ -8,11 +8,14 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="250dp"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="12dp"
         android:onClick="sendChangeBtn"
+        android:paddingTop="12dp"
+        android:paddingBottom="10dp"
         android:text="Занять аудиторию"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
