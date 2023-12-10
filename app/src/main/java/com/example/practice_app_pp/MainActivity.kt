@@ -31,13 +31,12 @@ import schedule.scheduling
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import schedule.animationBtn
-import schedule.animationLoadBtn
 import schedule.animationTitle
 import java.lang.Exception
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-
+import kotlinx.coroutines.*
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,13 +45,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         whichTheme(findViewById<ConstraintLayout>(R.id.constraintLayout))
         setTitle("Главное меню")
+//        scheduling()
         checkInternetConnect(findViewById(R.id.loadSchedule))
     }
     var checkConnect : Int = 0
     @RequiresApi(Build.VERSION_CODES.O)
     fun checkInternetConnect(view: View) {
         val loadBtn : Button = view as Button
-        animationLoadBtn(findViewById<Button>(R.id.loadSchedule))
+
         if(isInternetConnected(this)) {
             if(checkConnect > 0) {
                 Toast.makeText(applicationContext, "Подключение к интернету восстановлено!",Toast.LENGTH_SHORT).show()
