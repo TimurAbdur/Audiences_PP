@@ -36,14 +36,13 @@ import java.lang.Exception
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import kotlinx.coroutines.*
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.Theme_Practice_app_PP)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        whichTheme(findViewById<ConstraintLayout>(R.id.constraintLayout))
+        whatTheme(findViewById<ConstraintLayout>(R.id.constraintLayout))
         setTitle("Главное меню")
 //        scheduling()
         checkInternetConnect(findViewById(R.id.loadSchedule))
@@ -59,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             }
             findViewById<TextView>(R.id.textViewOnMain).text = getString(R.string.desc)
             loadBtn.text = "Загрузить расписание"
-            loadBtn.setOnClickListener(::getAudienceFromTextView)
+            loadBtn.setOnClickListener(::getAudiencesFromTextView)
             //Отображает списки на каждую пару
             writeShelderAtTextView()
             //Отображает пару и список в зависимости от времени
@@ -73,7 +72,7 @@ class MainActivity : AppCompatActivity() {
 
             loadBtn.text = "Проверить подключение"
             loadBtn.setOnClickListener(::checkInternetConnect)
-            findViewById<TextView>(R.id.textViewOnMain).text = "К сожалению, отсутствует подключение к интернету. Пожалуйста, проверьте свое подключение и перезайдите в приложение."
+            findViewById<TextView>(R.id.textViewOnMain).text = getString(R.string.noInternetConection)
         }
     }
 
@@ -85,7 +84,7 @@ class MainActivity : AppCompatActivity() {
         return networkCapabilities?.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET) == true
     }
 
-    fun whichTheme(cons : ConstraintLayout) {
+    fun whatTheme(cons : ConstraintLayout) {
         val currentNightMode = resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
         when (currentNightMode) {
             Configuration.UI_MODE_NIGHT_NO -> {
@@ -133,175 +132,175 @@ class MainActivity : AppCompatActivity() {
     //Функция записывает во все textView информацию о конкретной аудитории
     fun writeShelderAtTextView() {
         //Аудитрия 11
-        writeToTextViewUncorrectFormatAudiece(1,11,findViewById(R.id.a11))
-        writeToTextViewUncorrectFormatAudiece(2,11,findViewById(R.id.b11))
-        writeToTextViewUncorrectFormatAudiece(3,11,findViewById(R.id.c11))
-        writeToTextViewUncorrectFormatAudiece(4,11,findViewById(R.id.d11))
-        writeToTextViewUncorrectFormatAudiece(5,11,findViewById(R.id.e11))
-        writeToTextViewUncorrectFormatAudiece(6,11,findViewById(R.id.f11))
+        writeToTextViewAudienceInfo(1,11,findViewById(R.id.a11))
+        writeToTextViewAudienceInfo(2,11,findViewById(R.id.b11))
+        writeToTextViewAudienceInfo(3,11,findViewById(R.id.c11))
+        writeToTextViewAudienceInfo(4,11,findViewById(R.id.d11))
+        writeToTextViewAudienceInfo(5,11,findViewById(R.id.e11))
+        writeToTextViewAudienceInfo(6,11,findViewById(R.id.f11))
         //Аудитрия 12
-        writeToTextViewUncorrectFormatAudiece(1,12,findViewById(R.id.a12))
-        writeToTextViewUncorrectFormatAudiece(2,12,findViewById(R.id.b12))
-        writeToTextViewUncorrectFormatAudiece(3,12,findViewById(R.id.c12))
-        writeToTextViewUncorrectFormatAudiece(4,12,findViewById(R.id.d12))
-        writeToTextViewUncorrectFormatAudiece(5,12,findViewById(R.id.e12))
-        writeToTextViewUncorrectFormatAudiece(6,12,findViewById(R.id.f12))
+        writeToTextViewAudienceInfo(1,12,findViewById(R.id.a12))
+        writeToTextViewAudienceInfo(2,12,findViewById(R.id.b12))
+        writeToTextViewAudienceInfo(3,12,findViewById(R.id.c12))
+        writeToTextViewAudienceInfo(4,12,findViewById(R.id.d12))
+        writeToTextViewAudienceInfo(5,12,findViewById(R.id.e12))
+        writeToTextViewAudienceInfo(6,12,findViewById(R.id.f12))
         //Аудитрия 13
-        writeToTextViewUncorrectFormatAudiece(1,13,findViewById(R.id.a13))
-        writeToTextViewUncorrectFormatAudiece(2,13,findViewById(R.id.b13))
-        writeToTextViewUncorrectFormatAudiece(3,13,findViewById(R.id.c13))
-        writeToTextViewUncorrectFormatAudiece(4,13,findViewById(R.id.d13))
-        writeToTextViewUncorrectFormatAudiece(5,13,findViewById(R.id.e13))
-        writeToTextViewUncorrectFormatAudiece(6,13,findViewById(R.id.f13))
+        writeToTextViewAudienceInfo(1,13,findViewById(R.id.a13))
+        writeToTextViewAudienceInfo(2,13,findViewById(R.id.b13))
+        writeToTextViewAudienceInfo(3,13,findViewById(R.id.c13))
+        writeToTextViewAudienceInfo(4,13,findViewById(R.id.d13))
+        writeToTextViewAudienceInfo(5,13,findViewById(R.id.e13))
+        writeToTextViewAudienceInfo(6,13,findViewById(R.id.f13))
         //Аудитрия 14
-        writeToTextViewUncorrectFormatAudiece(1,14,findViewById(R.id.a14))
-        writeToTextViewUncorrectFormatAudiece(2,14,findViewById(R.id.b14))
-        writeToTextViewUncorrectFormatAudiece(3,14,findViewById(R.id.c14))
-        writeToTextViewUncorrectFormatAudiece(4,14,findViewById(R.id.d14))
-        writeToTextViewUncorrectFormatAudiece(5,14,findViewById(R.id.e14))
-        writeToTextViewUncorrectFormatAudiece(6,14,findViewById(R.id.f14))
+        writeToTextViewAudienceInfo(1,14,findViewById(R.id.a14))
+        writeToTextViewAudienceInfo(2,14,findViewById(R.id.b14))
+        writeToTextViewAudienceInfo(3,14,findViewById(R.id.c14))
+        writeToTextViewAudienceInfo(4,14,findViewById(R.id.d14))
+        writeToTextViewAudienceInfo(5,14,findViewById(R.id.e14))
+        writeToTextViewAudienceInfo(6,14,findViewById(R.id.f14))
         //Аудитрия 15
-        writeToTextViewUncorrectFormatAudiece(1,15,findViewById(R.id.a15))
-        writeToTextViewUncorrectFormatAudiece(2,15,findViewById(R.id.b15))
-        writeToTextViewUncorrectFormatAudiece(3,15,findViewById(R.id.c15))
-        writeToTextViewUncorrectFormatAudiece(4,15,findViewById(R.id.d15))
-        writeToTextViewUncorrectFormatAudiece(5,15,findViewById(R.id.e15))
-        writeToTextViewUncorrectFormatAudiece(6,15,findViewById(R.id.f15))
+        writeToTextViewAudienceInfo(1,15,findViewById(R.id.a15))
+        writeToTextViewAudienceInfo(2,15,findViewById(R.id.b15))
+        writeToTextViewAudienceInfo(3,15,findViewById(R.id.c15))
+        writeToTextViewAudienceInfo(4,15,findViewById(R.id.d15))
+        writeToTextViewAudienceInfo(5,15,findViewById(R.id.e15))
+        writeToTextViewAudienceInfo(6,15,findViewById(R.id.f15))
         //Аудитрия 16
-        writeToTextViewUncorrectFormatAudiece(1,16,findViewById(R.id.a16))
-        writeToTextViewUncorrectFormatAudiece(2,16,findViewById(R.id.b16))
-        writeToTextViewUncorrectFormatAudiece(3,16,findViewById(R.id.c16))
-        writeToTextViewUncorrectFormatAudiece(4,16,findViewById(R.id.d16))
-        writeToTextViewUncorrectFormatAudiece(5,16,findViewById(R.id.e16))
-        writeToTextViewUncorrectFormatAudiece(6,16,findViewById(R.id.f16))
+        writeToTextViewAudienceInfo(1,16,findViewById(R.id.a16))
+        writeToTextViewAudienceInfo(2,16,findViewById(R.id.b16))
+        writeToTextViewAudienceInfo(3,16,findViewById(R.id.c16))
+        writeToTextViewAudienceInfo(4,16,findViewById(R.id.d16))
+        writeToTextViewAudienceInfo(5,16,findViewById(R.id.e16))
+        writeToTextViewAudienceInfo(6,16,findViewById(R.id.f16))
         //Аудитрия 21
-        writeToTextViewUncorrectFormatAudiece(1,21,findViewById(R.id.a21))
-        writeToTextViewUncorrectFormatAudiece(2,21,findViewById(R.id.b21))
-        writeToTextViewUncorrectFormatAudiece(3,21,findViewById(R.id.c21))
-        writeToTextViewUncorrectFormatAudiece(4,21,findViewById(R.id.d21))
-        writeToTextViewUncorrectFormatAudiece(5,21,findViewById(R.id.e21))
-        writeToTextViewUncorrectFormatAudiece(6,21,findViewById(R.id.f21))
+        writeToTextViewAudienceInfo(1,21,findViewById(R.id.a21))
+        writeToTextViewAudienceInfo(2,21,findViewById(R.id.b21))
+        writeToTextViewAudienceInfo(3,21,findViewById(R.id.c21))
+        writeToTextViewAudienceInfo(4,21,findViewById(R.id.d21))
+        writeToTextViewAudienceInfo(5,21,findViewById(R.id.e21))
+        writeToTextViewAudienceInfo(6,21,findViewById(R.id.f21))
         //Аудитрия 22
-        writeToTextViewUncorrectFormatAudiece(1,22,findViewById(R.id.a22))
-        writeToTextViewUncorrectFormatAudiece(2,22,findViewById(R.id.b22))
-        writeToTextViewUncorrectFormatAudiece(3,22,findViewById(R.id.c22))
-        writeToTextViewUncorrectFormatAudiece(4,22,findViewById(R.id.d22))
-        writeToTextViewUncorrectFormatAudiece(5,22,findViewById(R.id.e22))
-        writeToTextViewUncorrectFormatAudiece(6,22,findViewById(R.id.f22))
+        writeToTextViewAudienceInfo(1,22,findViewById(R.id.a22))
+        writeToTextViewAudienceInfo(2,22,findViewById(R.id.b22))
+        writeToTextViewAudienceInfo(3,22,findViewById(R.id.c22))
+        writeToTextViewAudienceInfo(4,22,findViewById(R.id.d22))
+        writeToTextViewAudienceInfo(5,22,findViewById(R.id.e22))
+        writeToTextViewAudienceInfo(6,22,findViewById(R.id.f22))
         //Аудитрия 23
-        writeToTextViewUncorrectFormatAudiece(1,23,findViewById(R.id.a23))
-        writeToTextViewUncorrectFormatAudiece(2,23,findViewById(R.id.b23))
-        writeToTextViewUncorrectFormatAudiece(3,23,findViewById(R.id.c23))
-        writeToTextViewUncorrectFormatAudiece(4,23,findViewById(R.id.d23))
-        writeToTextViewUncorrectFormatAudiece(5,23,findViewById(R.id.e23))
-        writeToTextViewUncorrectFormatAudiece(6,23,findViewById(R.id.f23))
+        writeToTextViewAudienceInfo(1,23,findViewById(R.id.a23))
+        writeToTextViewAudienceInfo(2,23,findViewById(R.id.b23))
+        writeToTextViewAudienceInfo(3,23,findViewById(R.id.c23))
+        writeToTextViewAudienceInfo(4,23,findViewById(R.id.d23))
+        writeToTextViewAudienceInfo(5,23,findViewById(R.id.e23))
+        writeToTextViewAudienceInfo(6,23,findViewById(R.id.f23))
         //Аудитрия 24
-        writeToTextViewUncorrectFormatAudiece(1,24,findViewById(R.id.a24))
-        writeToTextViewUncorrectFormatAudiece(2,24,findViewById(R.id.b24))
-        writeToTextViewUncorrectFormatAudiece(3,24,findViewById(R.id.c24))
-        writeToTextViewUncorrectFormatAudiece(4,24,findViewById(R.id.d24))
-        writeToTextViewUncorrectFormatAudiece(5,24,findViewById(R.id.e24))
-        writeToTextViewUncorrectFormatAudiece(6,24,findViewById(R.id.f24))
+        writeToTextViewAudienceInfo(1,24,findViewById(R.id.a24))
+        writeToTextViewAudienceInfo(2,24,findViewById(R.id.b24))
+        writeToTextViewAudienceInfo(3,24,findViewById(R.id.c24))
+        writeToTextViewAudienceInfo(4,24,findViewById(R.id.d24))
+        writeToTextViewAudienceInfo(5,24,findViewById(R.id.e24))
+        writeToTextViewAudienceInfo(6,24,findViewById(R.id.f24))
         //Аудитрия 25
-        writeToTextViewUncorrectFormatAudiece(1,25,findViewById(R.id.a25))
-        writeToTextViewUncorrectFormatAudiece(2,25,findViewById(R.id.b25))
-        writeToTextViewUncorrectFormatAudiece(3,25,findViewById(R.id.c25))
-        writeToTextViewUncorrectFormatAudiece(4,25,findViewById(R.id.d25))
-        writeToTextViewUncorrectFormatAudiece(5,25,findViewById(R.id.e25))
-        writeToTextViewUncorrectFormatAudiece(6,25,findViewById(R.id.f25))
+        writeToTextViewAudienceInfo(1,25,findViewById(R.id.a25))
+        writeToTextViewAudienceInfo(2,25,findViewById(R.id.b25))
+        writeToTextViewAudienceInfo(3,25,findViewById(R.id.c25))
+        writeToTextViewAudienceInfo(4,25,findViewById(R.id.d25))
+        writeToTextViewAudienceInfo(5,25,findViewById(R.id.e25))
+        writeToTextViewAudienceInfo(6,25,findViewById(R.id.f25))
         //Аудитрия 26
-        writeToTextViewUncorrectFormatAudiece(1,26,findViewById(R.id.a26))
-        writeToTextViewUncorrectFormatAudiece(2,26,findViewById(R.id.b26))
-        writeToTextViewUncorrectFormatAudiece(3,26,findViewById(R.id.c26))
-        writeToTextViewUncorrectFormatAudiece(4,26,findViewById(R.id.d26))
-        writeToTextViewUncorrectFormatAudiece(5,26,findViewById(R.id.e26))
-        writeToTextViewUncorrectFormatAudiece(6,26,findViewById(R.id.f26))
+        writeToTextViewAudienceInfo(1,26,findViewById(R.id.a26))
+        writeToTextViewAudienceInfo(2,26,findViewById(R.id.b26))
+        writeToTextViewAudienceInfo(3,26,findViewById(R.id.c26))
+        writeToTextViewAudienceInfo(4,26,findViewById(R.id.d26))
+        writeToTextViewAudienceInfo(5,26,findViewById(R.id.e26))
+        writeToTextViewAudienceInfo(6,26,findViewById(R.id.f26))
         //Аудитрия 31
-        writeToTextViewUncorrectFormatAudiece(1,31,findViewById(R.id.a31))
-        writeToTextViewUncorrectFormatAudiece(2,31,findViewById(R.id.b31))
-        writeToTextViewUncorrectFormatAudiece(3,31,findViewById(R.id.c31))
-        writeToTextViewUncorrectFormatAudiece(4,31,findViewById(R.id.d31))
-        writeToTextViewUncorrectFormatAudiece(5,31,findViewById(R.id.e31))
-        writeToTextViewUncorrectFormatAudiece(6,31,findViewById(R.id.f31))
+        writeToTextViewAudienceInfo(1,31,findViewById(R.id.a31))
+        writeToTextViewAudienceInfo(2,31,findViewById(R.id.b31))
+        writeToTextViewAudienceInfo(3,31,findViewById(R.id.c31))
+        writeToTextViewAudienceInfo(4,31,findViewById(R.id.d31))
+        writeToTextViewAudienceInfo(5,31,findViewById(R.id.e31))
+        writeToTextViewAudienceInfo(6,31,findViewById(R.id.f31))
         //Аудитрия 32
-        writeToTextViewUncorrectFormatAudiece(1,32,findViewById(R.id.a32))
-        writeToTextViewUncorrectFormatAudiece(2,32,findViewById(R.id.b32))
-        writeToTextViewUncorrectFormatAudiece(3,32,findViewById(R.id.c32))
-        writeToTextViewUncorrectFormatAudiece(4,32,findViewById(R.id.d32))
-        writeToTextViewUncorrectFormatAudiece(5,32,findViewById(R.id.e32))
-        writeToTextViewUncorrectFormatAudiece(6,32,findViewById(R.id.f32))
+        writeToTextViewAudienceInfo(1,32,findViewById(R.id.a32))
+        writeToTextViewAudienceInfo(2,32,findViewById(R.id.b32))
+        writeToTextViewAudienceInfo(3,32,findViewById(R.id.c32))
+        writeToTextViewAudienceInfo(4,32,findViewById(R.id.d32))
+        writeToTextViewAudienceInfo(5,32,findViewById(R.id.e32))
+        writeToTextViewAudienceInfo(6,32,findViewById(R.id.f32))
         //Аудитрия 33
-        writeToTextViewUncorrectFormatAudiece(1,33,findViewById(R.id.a33))
-        writeToTextViewUncorrectFormatAudiece(2,33,findViewById(R.id.b33))
-        writeToTextViewUncorrectFormatAudiece(3,33,findViewById(R.id.c33))
-        writeToTextViewUncorrectFormatAudiece(4,33,findViewById(R.id.d33))
-        writeToTextViewUncorrectFormatAudiece(5,33,findViewById(R.id.e33))
-        writeToTextViewUncorrectFormatAudiece(6,33,findViewById(R.id.f33))
+        writeToTextViewAudienceInfo(1,33,findViewById(R.id.a33))
+        writeToTextViewAudienceInfo(2,33,findViewById(R.id.b33))
+        writeToTextViewAudienceInfo(3,33,findViewById(R.id.c33))
+        writeToTextViewAudienceInfo(4,33,findViewById(R.id.d33))
+        writeToTextViewAudienceInfo(5,33,findViewById(R.id.e33))
+        writeToTextViewAudienceInfo(6,33,findViewById(R.id.f33))
         //Аудитрия 34
-        writeToTextViewUncorrectFormatAudiece(1,34,findViewById(R.id.a34))
-        writeToTextViewUncorrectFormatAudiece(2,34,findViewById(R.id.b34))
-        writeToTextViewUncorrectFormatAudiece(3,34,findViewById(R.id.c34))
-        writeToTextViewUncorrectFormatAudiece(4,34,findViewById(R.id.d34))
-        writeToTextViewUncorrectFormatAudiece(5,34,findViewById(R.id.e34))
-        writeToTextViewUncorrectFormatAudiece(6,34,findViewById(R.id.f34))
+        writeToTextViewAudienceInfo(1,34,findViewById(R.id.a34))
+        writeToTextViewAudienceInfo(2,34,findViewById(R.id.b34))
+        writeToTextViewAudienceInfo(3,34,findViewById(R.id.c34))
+        writeToTextViewAudienceInfo(4,34,findViewById(R.id.d34))
+        writeToTextViewAudienceInfo(5,34,findViewById(R.id.e34))
+        writeToTextViewAudienceInfo(6,34,findViewById(R.id.f34))
         //Аудитрия 35
-        writeToTextViewUncorrectFormatAudiece(1,35,findViewById(R.id.a35))
-        writeToTextViewUncorrectFormatAudiece(2,35,findViewById(R.id.b35))
-        writeToTextViewUncorrectFormatAudiece(3,35,findViewById(R.id.c35))
-        writeToTextViewUncorrectFormatAudiece(4,35,findViewById(R.id.d35))
-        writeToTextViewUncorrectFormatAudiece(5,35,findViewById(R.id.e35))
-        writeToTextViewUncorrectFormatAudiece(6,35,findViewById(R.id.f35))
+        writeToTextViewAudienceInfo(1,35,findViewById(R.id.a35))
+        writeToTextViewAudienceInfo(2,35,findViewById(R.id.b35))
+        writeToTextViewAudienceInfo(3,35,findViewById(R.id.c35))
+        writeToTextViewAudienceInfo(4,35,findViewById(R.id.d35))
+        writeToTextViewAudienceInfo(5,35,findViewById(R.id.e35))
+        writeToTextViewAudienceInfo(6,35,findViewById(R.id.f35))
         //Аудитрия 36
-        writeToTextViewUncorrectFormatAudiece(1,36,findViewById(R.id.a36))
-        writeToTextViewUncorrectFormatAudiece(2,36,findViewById(R.id.b36))
-        writeToTextViewUncorrectFormatAudiece(3,36,findViewById(R.id.c36))
-        writeToTextViewUncorrectFormatAudiece(4,36,findViewById(R.id.d36))
-        writeToTextViewUncorrectFormatAudiece(5,36,findViewById(R.id.e36))
-        writeToTextViewUncorrectFormatAudiece(6,36,findViewById(R.id.f36))
+        writeToTextViewAudienceInfo(1,36,findViewById(R.id.a36))
+        writeToTextViewAudienceInfo(2,36,findViewById(R.id.b36))
+        writeToTextViewAudienceInfo(3,36,findViewById(R.id.c36))
+        writeToTextViewAudienceInfo(4,36,findViewById(R.id.d36))
+        writeToTextViewAudienceInfo(5,36,findViewById(R.id.e36))
+        writeToTextViewAudienceInfo(6,36,findViewById(R.id.f36))
         //Аудитрия 41
-        writeToTextViewUncorrectFormatAudiece(1,41,findViewById(R.id.a41))
-        writeToTextViewUncorrectFormatAudiece(2,41,findViewById(R.id.b41))
-        writeToTextViewUncorrectFormatAudiece(3,41,findViewById(R.id.c41))
-        writeToTextViewUncorrectFormatAudiece(4,41,findViewById(R.id.d41))
-        writeToTextViewUncorrectFormatAudiece(5,41,findViewById(R.id.e41))
-        writeToTextViewUncorrectFormatAudiece(6,41,findViewById(R.id.f41))
+        writeToTextViewAudienceInfo(1,41,findViewById(R.id.a41))
+        writeToTextViewAudienceInfo(2,41,findViewById(R.id.b41))
+        writeToTextViewAudienceInfo(3,41,findViewById(R.id.c41))
+        writeToTextViewAudienceInfo(4,41,findViewById(R.id.d41))
+        writeToTextViewAudienceInfo(5,41,findViewById(R.id.e41))
+        writeToTextViewAudienceInfo(6,41,findViewById(R.id.f41))
         //Аудитрия 42
-        writeToTextViewUncorrectFormatAudiece(1,42,findViewById(R.id.a42))
-        writeToTextViewUncorrectFormatAudiece(2,42,findViewById(R.id.b42))
-        writeToTextViewUncorrectFormatAudiece(3,42,findViewById(R.id.c42))
-        writeToTextViewUncorrectFormatAudiece(4,42,findViewById(R.id.d42))
-        writeToTextViewUncorrectFormatAudiece(5,42,findViewById(R.id.e42))
-        writeToTextViewUncorrectFormatAudiece(6,42,findViewById(R.id.f42))
+        writeToTextViewAudienceInfo(1,42,findViewById(R.id.a42))
+        writeToTextViewAudienceInfo(2,42,findViewById(R.id.b42))
+        writeToTextViewAudienceInfo(3,42,findViewById(R.id.c42))
+        writeToTextViewAudienceInfo(4,42,findViewById(R.id.d42))
+        writeToTextViewAudienceInfo(5,42,findViewById(R.id.e42))
+        writeToTextViewAudienceInfo(6,42,findViewById(R.id.f42))
         //Аудитрия 43
-        writeToTextViewUncorrectFormatAudiece(1,43,findViewById(R.id.a43))
-        writeToTextViewUncorrectFormatAudiece(2,43,findViewById(R.id.b43))
-        writeToTextViewUncorrectFormatAudiece(3,43,findViewById(R.id.c43))
-        writeToTextViewUncorrectFormatAudiece(4,43,findViewById(R.id.d43))
-        writeToTextViewUncorrectFormatAudiece(5,43,findViewById(R.id.e43))
-        writeToTextViewUncorrectFormatAudiece(6,43,findViewById(R.id.f43))
+        writeToTextViewAudienceInfo(1,43,findViewById(R.id.a43))
+        writeToTextViewAudienceInfo(2,43,findViewById(R.id.b43))
+        writeToTextViewAudienceInfo(3,43,findViewById(R.id.c43))
+        writeToTextViewAudienceInfo(4,43,findViewById(R.id.d43))
+        writeToTextViewAudienceInfo(5,43,findViewById(R.id.e43))
+        writeToTextViewAudienceInfo(6,43,findViewById(R.id.f43))
         //Аудитрия 44
-        writeToTextViewUncorrectFormatAudiece(1,44,findViewById(R.id.a44))
-        writeToTextViewUncorrectFormatAudiece(2,44,findViewById(R.id.b44))
-        writeToTextViewUncorrectFormatAudiece(3,44,findViewById(R.id.c44))
-        writeToTextViewUncorrectFormatAudiece(4,44,findViewById(R.id.d44))
-        writeToTextViewUncorrectFormatAudiece(5,44,findViewById(R.id.e44))
-        writeToTextViewUncorrectFormatAudiece(6,44,findViewById(R.id.f44))
+        writeToTextViewAudienceInfo(1,44,findViewById(R.id.a44))
+        writeToTextViewAudienceInfo(2,44,findViewById(R.id.b44))
+        writeToTextViewAudienceInfo(3,44,findViewById(R.id.c44))
+        writeToTextViewAudienceInfo(4,44,findViewById(R.id.d44))
+        writeToTextViewAudienceInfo(5,44,findViewById(R.id.e44))
+        writeToTextViewAudienceInfo(6,44,findViewById(R.id.f44))
         //Аудитрия 45
-        writeToTextViewUncorrectFormatAudiece(1,45,findViewById(R.id.a45))
-        writeToTextViewUncorrectFormatAudiece(2,45,findViewById(R.id.b45))
-        writeToTextViewUncorrectFormatAudiece(3,45,findViewById(R.id.c45))
-        writeToTextViewUncorrectFormatAudiece(4,45,findViewById(R.id.d45))
-        writeToTextViewUncorrectFormatAudiece(5,45,findViewById(R.id.e45))
-        writeToTextViewUncorrectFormatAudiece(6,45,findViewById(R.id.f45))
+        writeToTextViewAudienceInfo(1,45,findViewById(R.id.a45))
+        writeToTextViewAudienceInfo(2,45,findViewById(R.id.b45))
+        writeToTextViewAudienceInfo(3,45,findViewById(R.id.c45))
+        writeToTextViewAudienceInfo(4,45,findViewById(R.id.d45))
+        writeToTextViewAudienceInfo(5,45,findViewById(R.id.e45))
+        writeToTextViewAudienceInfo(6,45,findViewById(R.id.f45))
         //Аудитрия 46
-        writeToTextViewUncorrectFormatAudiece(1,46,findViewById(R.id.a46))
-        writeToTextViewUncorrectFormatAudiece(2,46,findViewById(R.id.b46))
-        writeToTextViewUncorrectFormatAudiece(3,46,findViewById(R.id.c46))
-        writeToTextViewUncorrectFormatAudiece(4,46,findViewById(R.id.d46))
-        writeToTextViewUncorrectFormatAudiece(5,46,findViewById(R.id.e46))
-        writeToTextViewUncorrectFormatAudiece(6,46,findViewById(R.id.f46))
+        writeToTextViewAudienceInfo(1,46,findViewById(R.id.a46))
+        writeToTextViewAudienceInfo(2,46,findViewById(R.id.b46))
+        writeToTextViewAudienceInfo(3,46,findViewById(R.id.c46))
+        writeToTextViewAudienceInfo(4,46,findViewById(R.id.d46))
+        writeToTextViewAudienceInfo(5,46,findViewById(R.id.e46))
+        writeToTextViewAudienceInfo(6,46,findViewById(R.id.f46))
     }
-    fun writeToTextViewUncorrectFormatAudiece(numberLesson: Int, id : Int, textView : TextView) {
+    fun writeToTextViewAudienceInfo(numberLesson: Int, id : Int, textView : TextView) {
         reference.child(numberLesson.toString()).child(id.toString()).addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val aud = dataSnapshot.getValue(Audience::class.java)
@@ -314,7 +313,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     //Функция в которой много раз вызывается функция getAudiendeFromTextView для всех аудиторий, и составляются массива с номером пары
-    fun getAudienceFromTextView(view: View) {
+    fun getAudiencesFromTextView(view: View) {
         try {
             //Пара 1
             val audienceA11 : Audience = getAudiendeFromTextView(findViewById(R.id.a11)) //Аудитория 11
@@ -698,7 +697,7 @@ class MainActivity : AppCompatActivity() {
             texyView.setTextColor(getColor(R.color.red))
         }
         else {
-            var secondPart = "Свободен"
+            var secondPart = "Свободна"
             val secondSpannable = SpannableString(secondPart)
             secondSpannable.setSpan(
                 AbsoluteSizeSpan(16, true),
@@ -861,7 +860,7 @@ class MainActivity : AppCompatActivity() {
                         Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
                     )
                 }
-                var secondPart = "\nСвободен"
+                var secondPart = "\nСвободна"
                 val secondSpannable = SpannableString(secondPart)
                 secondSpannable.setSpan(
                     AbsoluteSizeSpan(16, true),
