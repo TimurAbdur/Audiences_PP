@@ -15,7 +15,7 @@ class Setting : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_setting)
         setTitle("Настройки")
-        whichTheme(findViewById<Switch>(R.id.switch1))
+        whatTheme(findViewById<Switch>(R.id.switch1))
     }
 
     //Создание меню
@@ -33,13 +33,13 @@ class Setting : AppCompatActivity() {
     }
 
     //Меняет тему приложения
-    fun changeTheme(view: View) {
+        fun changeTheme(view: View) {
         val sw: Switch = findViewById(R.id.switch1)
         if (sw.isChecked) AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
         else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
     }
 
-    fun whichTheme(switch: Switch) {
+    fun whatTheme(switch: Switch) {
         val currentNightMode = resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
         when (currentNightMode) {
             Configuration.UI_MODE_NIGHT_NO -> {

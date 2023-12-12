@@ -17,7 +17,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import schedule.animationLoadBtn
 import schedule.animationTitle
-import schedule.sendScheduleToFirebase
+import schedule.sendAudienceToFirebase
 
 class FreeTheAudience : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,7 +64,7 @@ class FreeTheAudience : AppCompatActivity() {
                 if(checkBox.isChecked) {
                     val numberLesson = args.getString("numberLesson")
                     val numberAudience = args.getString("numberAudience")
-                    sendScheduleToFirebase(Audience(numberAudience!!.toInt(), "-"), numberAudience!!.toInt(),numberLesson!!.toInt())
+                    sendAudienceToFirebase(Audience(numberAudience!!.toInt(), "-"), numberAudience!!.toInt(),numberLesson!!.toInt())
                     Toast.makeText(applicationContext, "Аудитория номер ${numberAudience} освобождена!", Toast.LENGTH_SHORT).show()
 
                     var data: Intent = Intent()

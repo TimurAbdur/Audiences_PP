@@ -15,7 +15,7 @@ import android.widget.TextView
 import android.widget.Toast
 import schedule.animationLoadBtn
 import schedule.animationTitle
-import schedule.sendScheduleToFirebase
+import schedule.sendAudienceToFirebase
 
 class OccupyTheAudiences : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,22 +61,27 @@ class OccupyTheAudiences : AppCompatActivity() {
                     val containsNumbers = teacher.text.any { it.isDigit() }
                     if (!containsNumbers) {
                         if(teacher.text.length >= 3) {
-                            val firstChar = teacher.text.firstOrNull()
-                            if(firstChar!!.isUpperCase()) {
-                                val numberLesson = args.getString("numberLesson")
-                                val numberAudience = args.getString("numberAudience")
-                                sendScheduleToFirebase(Audience(numberAudience!!.toInt(), teacher.text.toString()), numberAudience!!.toInt(),numberLesson!!.toInt())
-                                Toast.makeText(applicationContext, "Аудитория номер ${numberAudience} успешно занята!", Toast.LENGTH_SHORT).show()
+                            if(teacher.text.length <= 15) {
+                                val firstChar = teacher.text.firstOrNull()
+                                if(firstChar!!.isUpperCase()) {
+                                    val numberLesson = args.getString("numberLesson")
+                                    val numberAudience = args.getString("numberAudience")
+                                    sendAudienceToFirebase(Audience(numberAudience!!.toInt(), teacher.text.toString()), numberAudience!!.toInt(),numberLesson!!.toInt())
+                                    Toast.makeText(applicationContext, "Аудитория номер ${numberAudience} успешно занята!", Toast.LENGTH_SHORT).show()
 
-                                var data: Intent = Intent()
-                                data.putExtra("idTextView", args.getString("word")+"${numberAudience}")
-                                data.putExtra("numberAudience", "${numberAudience}")
-                                data.putExtra("teacher", "\n${teacher.text}")
-                                setResult(RESULT_OK, data)
-                                finish()
+                                    var data: Intent = Intent()
+                                    data.putExtra("idTextView", args.getString("word")+"${numberAudience}")
+                                    data.putExtra("numberAudience", "${numberAudience}")
+                                    data.putExtra("teacher", "\n${teacher.text}")
+                                    setResult(RESULT_OK, data)
+                                    finish()
+                                }
+                                else {
+                                    Toast.makeText(applicationContext, "Фамилия преподавателя должна начинаться с заглавной буквы!", Toast.LENGTH_LONG).show()
+                                }
                             }
                             else {
-                                Toast.makeText(applicationContext, "Фамилия преподавателя должна начинаться с заглавной буквы!", Toast.LENGTH_LONG).show()
+                                Toast.makeText(applicationContext, "Фамилия преподавателя должна содержать максимум 15 символов!", Toast.LENGTH_LONG).show()
                             }
                         }
                         else {
