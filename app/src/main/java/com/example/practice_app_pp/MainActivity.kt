@@ -130,176 +130,6 @@ class MainActivity : AppCompatActivity() {
     var numOfTable : Int = 0
 
     //Функция записывает во все textView информацию о конкретной аудитории
-    fun writeShelderAtTextView() {
-        //Аудитрия 11
-        writeToTextViewAudienceInfo(1,11,findViewById(R.id.a11))
-        writeToTextViewAudienceInfo(2,11,findViewById(R.id.b11))
-        writeToTextViewAudienceInfo(3,11,findViewById(R.id.c11))
-        writeToTextViewAudienceInfo(4,11,findViewById(R.id.d11))
-        writeToTextViewAudienceInfo(5,11,findViewById(R.id.e11))
-        writeToTextViewAudienceInfo(6,11,findViewById(R.id.f11))
-        //Аудитрия 12
-        writeToTextViewAudienceInfo(1,12,findViewById(R.id.a12))
-        writeToTextViewAudienceInfo(2,12,findViewById(R.id.b12))
-        writeToTextViewAudienceInfo(3,12,findViewById(R.id.c12))
-        writeToTextViewAudienceInfo(4,12,findViewById(R.id.d12))
-        writeToTextViewAudienceInfo(5,12,findViewById(R.id.e12))
-        writeToTextViewAudienceInfo(6,12,findViewById(R.id.f12))
-        //Аудитрия 13
-        writeToTextViewAudienceInfo(1,13,findViewById(R.id.a13))
-        writeToTextViewAudienceInfo(2,13,findViewById(R.id.b13))
-        writeToTextViewAudienceInfo(3,13,findViewById(R.id.c13))
-        writeToTextViewAudienceInfo(4,13,findViewById(R.id.d13))
-        writeToTextViewAudienceInfo(5,13,findViewById(R.id.e13))
-        writeToTextViewAudienceInfo(6,13,findViewById(R.id.f13))
-        //Аудитрия 14
-        writeToTextViewAudienceInfo(1,14,findViewById(R.id.a14))
-        writeToTextViewAudienceInfo(2,14,findViewById(R.id.b14))
-        writeToTextViewAudienceInfo(3,14,findViewById(R.id.c14))
-        writeToTextViewAudienceInfo(4,14,findViewById(R.id.d14))
-        writeToTextViewAudienceInfo(5,14,findViewById(R.id.e14))
-        writeToTextViewAudienceInfo(6,14,findViewById(R.id.f14))
-        //Аудитрия 15
-        writeToTextViewAudienceInfo(1,15,findViewById(R.id.a15))
-        writeToTextViewAudienceInfo(2,15,findViewById(R.id.b15))
-        writeToTextViewAudienceInfo(3,15,findViewById(R.id.c15))
-        writeToTextViewAudienceInfo(4,15,findViewById(R.id.d15))
-        writeToTextViewAudienceInfo(5,15,findViewById(R.id.e15))
-        writeToTextViewAudienceInfo(6,15,findViewById(R.id.f15))
-        //Аудитрия 16
-        writeToTextViewAudienceInfo(1,16,findViewById(R.id.a16))
-        writeToTextViewAudienceInfo(2,16,findViewById(R.id.b16))
-        writeToTextViewAudienceInfo(3,16,findViewById(R.id.c16))
-        writeToTextViewAudienceInfo(4,16,findViewById(R.id.d16))
-        writeToTextViewAudienceInfo(5,16,findViewById(R.id.e16))
-        writeToTextViewAudienceInfo(6,16,findViewById(R.id.f16))
-        //Аудитрия 21
-        writeToTextViewAudienceInfo(1,21,findViewById(R.id.a21))
-        writeToTextViewAudienceInfo(2,21,findViewById(R.id.b21))
-        writeToTextViewAudienceInfo(3,21,findViewById(R.id.c21))
-        writeToTextViewAudienceInfo(4,21,findViewById(R.id.d21))
-        writeToTextViewAudienceInfo(5,21,findViewById(R.id.e21))
-        writeToTextViewAudienceInfo(6,21,findViewById(R.id.f21))
-        //Аудитрия 22
-        writeToTextViewAudienceInfo(1,22,findViewById(R.id.a22))
-        writeToTextViewAudienceInfo(2,22,findViewById(R.id.b22))
-        writeToTextViewAudienceInfo(3,22,findViewById(R.id.c22))
-        writeToTextViewAudienceInfo(4,22,findViewById(R.id.d22))
-        writeToTextViewAudienceInfo(5,22,findViewById(R.id.e22))
-        writeToTextViewAudienceInfo(6,22,findViewById(R.id.f22))
-        //Аудитрия 23
-        writeToTextViewAudienceInfo(1,23,findViewById(R.id.a23))
-        writeToTextViewAudienceInfo(2,23,findViewById(R.id.b23))
-        writeToTextViewAudienceInfo(3,23,findViewById(R.id.c23))
-        writeToTextViewAudienceInfo(4,23,findViewById(R.id.d23))
-        writeToTextViewAudienceInfo(5,23,findViewById(R.id.e23))
-        writeToTextViewAudienceInfo(6,23,findViewById(R.id.f23))
-        //Аудитрия 24
-        writeToTextViewAudienceInfo(1,24,findViewById(R.id.a24))
-        writeToTextViewAudienceInfo(2,24,findViewById(R.id.b24))
-        writeToTextViewAudienceInfo(3,24,findViewById(R.id.c24))
-        writeToTextViewAudienceInfo(4,24,findViewById(R.id.d24))
-        writeToTextViewAudienceInfo(5,24,findViewById(R.id.e24))
-        writeToTextViewAudienceInfo(6,24,findViewById(R.id.f24))
-        //Аудитрия 25
-        writeToTextViewAudienceInfo(1,25,findViewById(R.id.a25))
-        writeToTextViewAudienceInfo(2,25,findViewById(R.id.b25))
-        writeToTextViewAudienceInfo(3,25,findViewById(R.id.c25))
-        writeToTextViewAudienceInfo(4,25,findViewById(R.id.d25))
-        writeToTextViewAudienceInfo(5,25,findViewById(R.id.e25))
-        writeToTextViewAudienceInfo(6,25,findViewById(R.id.f25))
-        //Аудитрия 26
-        writeToTextViewAudienceInfo(1,26,findViewById(R.id.a26))
-        writeToTextViewAudienceInfo(2,26,findViewById(R.id.b26))
-        writeToTextViewAudienceInfo(3,26,findViewById(R.id.c26))
-        writeToTextViewAudienceInfo(4,26,findViewById(R.id.d26))
-        writeToTextViewAudienceInfo(5,26,findViewById(R.id.e26))
-        writeToTextViewAudienceInfo(6,26,findViewById(R.id.f26))
-        //Аудитрия 31
-        writeToTextViewAudienceInfo(1,31,findViewById(R.id.a31))
-        writeToTextViewAudienceInfo(2,31,findViewById(R.id.b31))
-        writeToTextViewAudienceInfo(3,31,findViewById(R.id.c31))
-        writeToTextViewAudienceInfo(4,31,findViewById(R.id.d31))
-        writeToTextViewAudienceInfo(5,31,findViewById(R.id.e31))
-        writeToTextViewAudienceInfo(6,31,findViewById(R.id.f31))
-        //Аудитрия 32
-        writeToTextViewAudienceInfo(1,32,findViewById(R.id.a32))
-        writeToTextViewAudienceInfo(2,32,findViewById(R.id.b32))
-        writeToTextViewAudienceInfo(3,32,findViewById(R.id.c32))
-        writeToTextViewAudienceInfo(4,32,findViewById(R.id.d32))
-        writeToTextViewAudienceInfo(5,32,findViewById(R.id.e32))
-        writeToTextViewAudienceInfo(6,32,findViewById(R.id.f32))
-        //Аудитрия 33
-        writeToTextViewAudienceInfo(1,33,findViewById(R.id.a33))
-        writeToTextViewAudienceInfo(2,33,findViewById(R.id.b33))
-        writeToTextViewAudienceInfo(3,33,findViewById(R.id.c33))
-        writeToTextViewAudienceInfo(4,33,findViewById(R.id.d33))
-        writeToTextViewAudienceInfo(5,33,findViewById(R.id.e33))
-        writeToTextViewAudienceInfo(6,33,findViewById(R.id.f33))
-        //Аудитрия 34
-        writeToTextViewAudienceInfo(1,34,findViewById(R.id.a34))
-        writeToTextViewAudienceInfo(2,34,findViewById(R.id.b34))
-        writeToTextViewAudienceInfo(3,34,findViewById(R.id.c34))
-        writeToTextViewAudienceInfo(4,34,findViewById(R.id.d34))
-        writeToTextViewAudienceInfo(5,34,findViewById(R.id.e34))
-        writeToTextViewAudienceInfo(6,34,findViewById(R.id.f34))
-        //Аудитрия 35
-        writeToTextViewAudienceInfo(1,35,findViewById(R.id.a35))
-        writeToTextViewAudienceInfo(2,35,findViewById(R.id.b35))
-        writeToTextViewAudienceInfo(3,35,findViewById(R.id.c35))
-        writeToTextViewAudienceInfo(4,35,findViewById(R.id.d35))
-        writeToTextViewAudienceInfo(5,35,findViewById(R.id.e35))
-        writeToTextViewAudienceInfo(6,35,findViewById(R.id.f35))
-        //Аудитрия 36
-        writeToTextViewAudienceInfo(1,36,findViewById(R.id.a36))
-        writeToTextViewAudienceInfo(2,36,findViewById(R.id.b36))
-        writeToTextViewAudienceInfo(3,36,findViewById(R.id.c36))
-        writeToTextViewAudienceInfo(4,36,findViewById(R.id.d36))
-        writeToTextViewAudienceInfo(5,36,findViewById(R.id.e36))
-        writeToTextViewAudienceInfo(6,36,findViewById(R.id.f36))
-        //Аудитрия 41
-        writeToTextViewAudienceInfo(1,41,findViewById(R.id.a41))
-        writeToTextViewAudienceInfo(2,41,findViewById(R.id.b41))
-        writeToTextViewAudienceInfo(3,41,findViewById(R.id.c41))
-        writeToTextViewAudienceInfo(4,41,findViewById(R.id.d41))
-        writeToTextViewAudienceInfo(5,41,findViewById(R.id.e41))
-        writeToTextViewAudienceInfo(6,41,findViewById(R.id.f41))
-        //Аудитрия 42
-        writeToTextViewAudienceInfo(1,42,findViewById(R.id.a42))
-        writeToTextViewAudienceInfo(2,42,findViewById(R.id.b42))
-        writeToTextViewAudienceInfo(3,42,findViewById(R.id.c42))
-        writeToTextViewAudienceInfo(4,42,findViewById(R.id.d42))
-        writeToTextViewAudienceInfo(5,42,findViewById(R.id.e42))
-        writeToTextViewAudienceInfo(6,42,findViewById(R.id.f42))
-        //Аудитрия 43
-        writeToTextViewAudienceInfo(1,43,findViewById(R.id.a43))
-        writeToTextViewAudienceInfo(2,43,findViewById(R.id.b43))
-        writeToTextViewAudienceInfo(3,43,findViewById(R.id.c43))
-        writeToTextViewAudienceInfo(4,43,findViewById(R.id.d43))
-        writeToTextViewAudienceInfo(5,43,findViewById(R.id.e43))
-        writeToTextViewAudienceInfo(6,43,findViewById(R.id.f43))
-        //Аудитрия 44
-        writeToTextViewAudienceInfo(1,44,findViewById(R.id.a44))
-        writeToTextViewAudienceInfo(2,44,findViewById(R.id.b44))
-        writeToTextViewAudienceInfo(3,44,findViewById(R.id.c44))
-        writeToTextViewAudienceInfo(4,44,findViewById(R.id.d44))
-        writeToTextViewAudienceInfo(5,44,findViewById(R.id.e44))
-        writeToTextViewAudienceInfo(6,44,findViewById(R.id.f44))
-        //Аудитрия 45
-        writeToTextViewAudienceInfo(1,45,findViewById(R.id.a45))
-        writeToTextViewAudienceInfo(2,45,findViewById(R.id.b45))
-        writeToTextViewAudienceInfo(3,45,findViewById(R.id.c45))
-        writeToTextViewAudienceInfo(4,45,findViewById(R.id.d45))
-        writeToTextViewAudienceInfo(5,45,findViewById(R.id.e45))
-        writeToTextViewAudienceInfo(6,45,findViewById(R.id.f45))
-        //Аудитрия 46
-        writeToTextViewAudienceInfo(1,46,findViewById(R.id.a46))
-        writeToTextViewAudienceInfo(2,46,findViewById(R.id.b46))
-        writeToTextViewAudienceInfo(3,46,findViewById(R.id.c46))
-        writeToTextViewAudienceInfo(4,46,findViewById(R.id.d46))
-        writeToTextViewAudienceInfo(5,46,findViewById(R.id.e46))
-        writeToTextViewAudienceInfo(6,46,findViewById(R.id.f46))
-    }
     fun writeToTextViewAudienceInfo(numberLesson: Int, id : Int, textView : TextView) {
         reference.child(numberLesson.toString()).child(id.toString()).addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
@@ -312,201 +142,7 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    //Функция в которой много раз вызывается функция getAudiendeFromTextView для всех аудиторий, и составляются массива с номером пары
-    fun getAudiencesFromTextView(view: View) {
-        try {
-            //Пара 1
-            val audienceA11 : Audience = getAudiendeFromTextView(findViewById(R.id.a11)) //Аудитория 11
-            val audienceA12 : Audience = getAudiendeFromTextView(findViewById(R.id.a12)) //Аудитория 12
-            val audienceA13 : Audience = getAudiendeFromTextView(findViewById(R.id.a13)) //Аудитория 13
-            val audienceA14 : Audience = getAudiendeFromTextView(findViewById(R.id.a14)) //Аудитория 14
-            val audienceA15 : Audience = getAudiendeFromTextView(findViewById(R.id.a15)) //Аудитория 15
-            val audienceA16 : Audience = getAudiendeFromTextView(findViewById(R.id.a16)) //Аудитория 16
-            val audienceA21 : Audience = getAudiendeFromTextView(findViewById(R.id.a21)) //Аудитория 21
-            val audienceA22 : Audience = getAudiendeFromTextView(findViewById(R.id.a22)) //Аудитория 22
-            val audienceA23 : Audience = getAudiendeFromTextView(findViewById(R.id.a23)) //Аудитория 23
-            val audienceA24 : Audience = getAudiendeFromTextView(findViewById(R.id.a24)) //Аудитория 24
-            val audienceA25 : Audience = getAudiendeFromTextView(findViewById(R.id.a25)) //Аудитория 25
-            val audienceA26 : Audience = getAudiendeFromTextView(findViewById(R.id.a26)) //Аудитория 26
-            val audienceA31 : Audience = getAudiendeFromTextView(findViewById(R.id.a31)) //Аудитория 31
-            val audienceA32 : Audience = getAudiendeFromTextView(findViewById(R.id.a32)) //Аудитория 32
-            val audienceA33 : Audience = getAudiendeFromTextView(findViewById(R.id.a33)) //Аудитория 33
-            val audienceA34 : Audience = getAudiendeFromTextView(findViewById(R.id.a34)) //Аудитория 34
-            val audienceA35 : Audience = getAudiendeFromTextView(findViewById(R.id.a35)) //Аудитория 35
-            val audienceA36 : Audience = getAudiendeFromTextView(findViewById(R.id.a36)) //Аудитория 36
-            val audienceA41 : Audience = getAudiendeFromTextView(findViewById(R.id.a41)) //Аудитория 41
-            val audienceA42 : Audience = getAudiendeFromTextView(findViewById(R.id.a42)) //Аудитория 42
-            val audienceA43 : Audience = getAudiendeFromTextView(findViewById(R.id.a43)) //Аудитория 43
-            val audienceA44 : Audience = getAudiendeFromTextView(findViewById(R.id.a44)) //Аудитория 44
-            val audienceA45 : Audience = getAudiendeFromTextView(findViewById(R.id.a45)) //Аудитория 45
-            val audienceA46 : Audience = getAudiendeFromTextView(findViewById(R.id.a46)) //Аудитория 46
-            //Пара номер 2
-            val audienceB11 : Audience = getAudiendeFromTextView(findViewById(R.id.b11)) //Аудитория 11
-            val audienceB12 : Audience = getAudiendeFromTextView(findViewById(R.id.b12)) //Аудитория 12
-            val audienceB13 : Audience = getAudiendeFromTextView(findViewById(R.id.b13)) //Аудитория 13
-            val audienceB14 : Audience = getAudiendeFromTextView(findViewById(R.id.b14)) //Аудитория 14
-            val audienceB15 : Audience = getAudiendeFromTextView(findViewById(R.id.b15)) //Аудитория 15
-            val audienceB16 : Audience = getAudiendeFromTextView(findViewById(R.id.b16)) //Аудитория 16
-            val audienceB21 : Audience = getAudiendeFromTextView(findViewById(R.id.b21)) //Аудитория 21
-            val audienceB22 : Audience = getAudiendeFromTextView(findViewById(R.id.b22)) //Аудитория 22
-            val audienceB23 : Audience = getAudiendeFromTextView(findViewById(R.id.b23)) //Аудитория 23
-            val audienceB24 : Audience = getAudiendeFromTextView(findViewById(R.id.b24)) //Аудитория 24
-            val audienceB25 : Audience = getAudiendeFromTextView(findViewById(R.id.b25)) //Аудитория 25
-            val audienceB26 : Audience = getAudiendeFromTextView(findViewById(R.id.b26)) //Аудитория 26
-            val audienceB31 : Audience = getAudiendeFromTextView(findViewById(R.id.b31)) //Аудитория 31
-            val audienceB32 : Audience = getAudiendeFromTextView(findViewById(R.id.b32)) //Аудитория 32
-            val audienceB33 : Audience = getAudiendeFromTextView(findViewById(R.id.b33)) //Аудитория 33
-            val audienceB34 : Audience = getAudiendeFromTextView(findViewById(R.id.b34)) //Аудитория 34
-            val audienceB35 : Audience = getAudiendeFromTextView(findViewById(R.id.b35)) //Аудитория 35
-            val audienceB36 : Audience = getAudiendeFromTextView(findViewById(R.id.b36)) //Аудитория 36
-            val audienceB41 : Audience = getAudiendeFromTextView(findViewById(R.id.b41)) //Аудитория 41
-            val audienceB42 : Audience = getAudiendeFromTextView(findViewById(R.id.b42)) //Аудитория 42
-            val audienceB43 : Audience = getAudiendeFromTextView(findViewById(R.id.b43)) //Аудитория 43
-            val audienceB44 : Audience = getAudiendeFromTextView(findViewById(R.id.b44)) //Аудитория 44
-            val audienceB45 : Audience = getAudiendeFromTextView(findViewById(R.id.b45)) //Аудитория 45
-            val audienceB46 : Audience = getAudiendeFromTextView(findViewById(R.id.b46)) //Аудитория 46
-            //Пара номер 3
-            val audienceC11 : Audience = getAudiendeFromTextView(findViewById(R.id.c11)) //Аудитория 11
-            val audienceC12 : Audience = getAudiendeFromTextView(findViewById(R.id.c12)) //Аудитория 12
-            val audienceC13 : Audience = getAudiendeFromTextView(findViewById(R.id.c13)) //Аудитория 13
-            val audienceC14 : Audience = getAudiendeFromTextView(findViewById(R.id.c14)) //Аудитория 14
-            val audienceC15 : Audience = getAudiendeFromTextView(findViewById(R.id.c15)) //Аудитория 15
-            val audienceC16 : Audience = getAudiendeFromTextView(findViewById(R.id.c16)) //Аудитория 16
-            val audienceC21 : Audience = getAudiendeFromTextView(findViewById(R.id.c21)) //Аудитория 21
-            val audienceC22 : Audience = getAudiendeFromTextView(findViewById(R.id.c22)) //Аудитория 22
-            val audienceC23 : Audience = getAudiendeFromTextView(findViewById(R.id.c23)) //Аудитория 23
-            val audienceC24 : Audience = getAudiendeFromTextView(findViewById(R.id.c24)) //Аудитория 24
-            val audienceC25 : Audience = getAudiendeFromTextView(findViewById(R.id.c25)) //Аудитория 25
-            val audienceC26 : Audience = getAudiendeFromTextView(findViewById(R.id.c26)) //Аудитория 26
-            val audienceC31 : Audience = getAudiendeFromTextView(findViewById(R.id.c31)) //Аудитория 31
-            val audienceC32 : Audience = getAudiendeFromTextView(findViewById(R.id.c32)) //Аудитория 32
-            val audienceC33 : Audience = getAudiendeFromTextView(findViewById(R.id.c33)) //Аудитория 33
-            val audienceC34 : Audience = getAudiendeFromTextView(findViewById(R.id.c34)) //Аудитория 34
-            val audienceC35 : Audience = getAudiendeFromTextView(findViewById(R.id.c35)) //Аудитория 35
-            val audienceC36 : Audience = getAudiendeFromTextView(findViewById(R.id.c36)) //Аудитория 36
-            val audienceC41 : Audience = getAudiendeFromTextView(findViewById(R.id.c41)) //Аудитория 41
-            val audienceC42 : Audience = getAudiendeFromTextView(findViewById(R.id.c42)) //Аудитория 42
-            val audienceC43 : Audience = getAudiendeFromTextView(findViewById(R.id.c43)) //Аудитория 43
-            val audienceC44 : Audience = getAudiendeFromTextView(findViewById(R.id.c44)) //Аудитория 44
-            val audienceC45 : Audience = getAudiendeFromTextView(findViewById(R.id.c45)) //Аудитория 45
-            val audienceC46 : Audience = getAudiendeFromTextView(findViewById(R.id.c46)) //Аудитория 46
-            //Пара номер 4
-            val audienceD11 : Audience = getAudiendeFromTextView(findViewById(R.id.d11)) //Аудитория 11
-            val audienceD12 : Audience = getAudiendeFromTextView(findViewById(R.id.d12)) //Аудитория 12
-            val audienceD13 : Audience = getAudiendeFromTextView(findViewById(R.id.d13)) //Аудитория 13
-            val audienceD14 : Audience = getAudiendeFromTextView(findViewById(R.id.d14)) //Аудитория 14
-            val audienceD15 : Audience = getAudiendeFromTextView(findViewById(R.id.d15)) //Аудитория 15
-            val audienceD16 : Audience = getAudiendeFromTextView(findViewById(R.id.d16)) //Аудитория 16
-            val audienceD21 : Audience = getAudiendeFromTextView(findViewById(R.id.d21)) //Аудитория 21
-            val audienceD22 : Audience = getAudiendeFromTextView(findViewById(R.id.d22)) //Аудитория 22
-            val audienceD23 : Audience = getAudiendeFromTextView(findViewById(R.id.d23)) //Аудитория 23
-            val audienceD24 : Audience = getAudiendeFromTextView(findViewById(R.id.d24)) //Аудитория 24
-            val audienceD25 : Audience = getAudiendeFromTextView(findViewById(R.id.d25)) //Аудитория 25
-            val audienceD26 : Audience = getAudiendeFromTextView(findViewById(R.id.d26)) //Аудитория 26
-            val audienceD31 : Audience = getAudiendeFromTextView(findViewById(R.id.d31)) //Аудитория 31
-            val audienceD32 : Audience = getAudiendeFromTextView(findViewById(R.id.d32)) //Аудитория 32
-            val audienceD33 : Audience = getAudiendeFromTextView(findViewById(R.id.d33)) //Аудитория 33
-            val audienceD34 : Audience = getAudiendeFromTextView(findViewById(R.id.d34)) //Аудитория 34
-            val audienceD35 : Audience = getAudiendeFromTextView(findViewById(R.id.d35)) //Аудитория 35
-            val audienceD36 : Audience = getAudiendeFromTextView(findViewById(R.id.d36)) //Аудитория 36
-            val audienceD41 : Audience = getAudiendeFromTextView(findViewById(R.id.d41)) //Аудитория 41
-            val audienceD42 : Audience = getAudiendeFromTextView(findViewById(R.id.d42)) //Аудитория 42
-            val audienceD43 : Audience = getAudiendeFromTextView(findViewById(R.id.d43)) //Аудитория 43
-            val audienceD44 : Audience = getAudiendeFromTextView(findViewById(R.id.d44)) //Аудитория 44
-            val audienceD45 : Audience = getAudiendeFromTextView(findViewById(R.id.d45)) //Аудитория 45
-            val audienceD46 : Audience = getAudiendeFromTextView(findViewById(R.id.d46)) //Аудитория 46
-            //Пара номер 5
-            val audienceE11 : Audience = getAudiendeFromTextView(findViewById(R.id.e11)) //Аудитория 11
-            val audienceE12 : Audience = getAudiendeFromTextView(findViewById(R.id.e12)) //Аудитория 12
-            val audienceE13 : Audience = getAudiendeFromTextView(findViewById(R.id.e13)) //Аудитория 13
-            val audienceE14 : Audience = getAudiendeFromTextView(findViewById(R.id.e14)) //Аудитория 14
-            val audienceE15 : Audience = getAudiendeFromTextView(findViewById(R.id.e15)) //Аудитория 15
-            val audienceE16 : Audience = getAudiendeFromTextView(findViewById(R.id.e16)) //Аудитория 16
-            val audienceE21 : Audience = getAudiendeFromTextView(findViewById(R.id.e21)) //Аудитория 21
-            val audienceE22 : Audience = getAudiendeFromTextView(findViewById(R.id.e22)) //Аудитория 22
-            val audienceE23 : Audience = getAudiendeFromTextView(findViewById(R.id.e23)) //Аудитория 23
-            val audienceE24 : Audience = getAudiendeFromTextView(findViewById(R.id.e24)) //Аудитория 24
-            val audienceE25 : Audience = getAudiendeFromTextView(findViewById(R.id.e25)) //Аудитория 25
-            val audienceE26 : Audience = getAudiendeFromTextView(findViewById(R.id.e26)) //Аудитория 26
-            val audienceE31 : Audience = getAudiendeFromTextView(findViewById(R.id.e31)) //Аудитория 31
-            val audienceE32 : Audience = getAudiendeFromTextView(findViewById(R.id.e32)) //Аудитория 32
-            val audienceE33 : Audience = getAudiendeFromTextView(findViewById(R.id.e33)) //Аудитория 33
-            val audienceE34 : Audience = getAudiendeFromTextView(findViewById(R.id.e34)) //Аудитория 34
-            val audienceE35 : Audience = getAudiendeFromTextView(findViewById(R.id.e35)) //Аудитория 35
-            val audienceE36 : Audience = getAudiendeFromTextView(findViewById(R.id.e36)) //Аудитория 36
-            val audienceE41 : Audience = getAudiendeFromTextView(findViewById(R.id.e41)) //Аудитория 41
-            val audienceE42 : Audience = getAudiendeFromTextView(findViewById(R.id.e42)) //Аудитория 42
-            val audienceE43 : Audience = getAudiendeFromTextView(findViewById(R.id.e43)) //Аудитория 43
-            val audienceE44 : Audience = getAudiendeFromTextView(findViewById(R.id.e44)) //Аудитория 44
-            val audienceE45 : Audience = getAudiendeFromTextView(findViewById(R.id.e45)) //Аудитория 45
-            val audienceE46 : Audience = getAudiendeFromTextView(findViewById(R.id.e46)) //Аудитория 46
-            //Пара номер 5
-            val audienceF11 : Audience = getAudiendeFromTextView(findViewById(R.id.f11)) //Аудитория 11
-            val audienceF12 : Audience = getAudiendeFromTextView(findViewById(R.id.f12)) //Аудитория 12
-            val audienceF13 : Audience = getAudiendeFromTextView(findViewById(R.id.f13)) //Аудитория 13
-            val audienceF14 : Audience = getAudiendeFromTextView(findViewById(R.id.f14)) //Аудитория 14
-            val audienceF15 : Audience = getAudiendeFromTextView(findViewById(R.id.f15)) //Аудитория 15
-            val audienceF16 : Audience = getAudiendeFromTextView(findViewById(R.id.f16)) //Аудитория 16
-            val audienceF21 : Audience = getAudiendeFromTextView(findViewById(R.id.f21)) //Аудитория 21
-            val audienceF22 : Audience = getAudiendeFromTextView(findViewById(R.id.f22)) //Аудитория 22
-            val audienceF23 : Audience = getAudiendeFromTextView(findViewById(R.id.f23)) //Аудитория 23
-            val audienceF24 : Audience = getAudiendeFromTextView(findViewById(R.id.f24)) //Аудитория 24
-            val audienceF25 : Audience = getAudiendeFromTextView(findViewById(R.id.f25)) //Аудитория 25
-            val audienceF26 : Audience = getAudiendeFromTextView(findViewById(R.id.f26)) //Аудитория 26
-            val audienceF31 : Audience = getAudiendeFromTextView(findViewById(R.id.f31)) //Аудитория 31
-            val audienceF32 : Audience = getAudiendeFromTextView(findViewById(R.id.f32)) //Аудитория 32
-            val audienceF33 : Audience = getAudiendeFromTextView(findViewById(R.id.f33)) //Аудитория 33
-            val audienceF34 : Audience = getAudiendeFromTextView(findViewById(R.id.f34)) //Аудитория 34
-            val audienceF35 : Audience = getAudiendeFromTextView(findViewById(R.id.f35)) //Аудитория 35
-            val audienceF36 : Audience = getAudiendeFromTextView(findViewById(R.id.f36)) //Аудитория 36
-            val audienceF41 : Audience = getAudiendeFromTextView(findViewById(R.id.f41)) //Аудитория 41
-            val audienceF42 : Audience = getAudiendeFromTextView(findViewById(R.id.f42)) //Аудитория 42
-            val audienceF43 : Audience = getAudiendeFromTextView(findViewById(R.id.f43)) //Аудитория 43
-            val audienceF44 : Audience = getAudiendeFromTextView(findViewById(R.id.f44)) //Аудитория 44
-            val audienceF45 : Audience = getAudiendeFromTextView(findViewById(R.id.f45)) //Аудитория 45
-            val audienceF46 : Audience = getAudiendeFromTextView(findViewById(R.id.f46)) //Аудитория 46
 
-            lessonNum1 = arrayOf(audienceA11,audienceA12,audienceA13,audienceA14,audienceA15, audienceA16,
-                audienceA21,audienceA22,audienceA23,audienceA24,audienceA25,audienceA26,
-                audienceA31,audienceA32,audienceA33,audienceA34,audienceA35,audienceA36,
-                audienceA41,audienceA42,audienceA43,audienceA44,audienceA45,audienceA46)
-            lessonNum2 = arrayOf(audienceB11,audienceB12,audienceB13,audienceB14,audienceB15,audienceB16,
-                audienceB21,audienceB22,audienceB23,audienceB24,audienceB25,audienceB26,
-                audienceB31,audienceB32,audienceB33,audienceB34,audienceB35,audienceB36,
-                audienceB41,audienceB42,audienceB43,audienceB44,audienceB45,audienceB46)
-            lessonNum3 = arrayOf(audienceC11,audienceC12,audienceC13,audienceC14,audienceC15,audienceC16,
-                audienceC21,audienceC22,audienceC23,audienceC24,audienceC25,audienceC26,
-                audienceC31,audienceC32,audienceC33,audienceC34,audienceC35,audienceC36,
-                audienceC41,audienceC42,audienceC43,audienceC44,audienceC45,audienceC46)
-            lessonNum4 = arrayOf(audienceD11,audienceD12,audienceD13,audienceD14,audienceD15,audienceD16,
-                audienceD21,audienceD22,audienceD23,audienceD24,audienceD25,audienceD26,
-                audienceD31,audienceD32,audienceD33,audienceD34,audienceD35,audienceD36,
-                audienceD41,audienceD42,audienceD43,audienceD44,audienceD45,audienceD46)
-            lessonNum5 = arrayOf(audienceE11,audienceE12,audienceE13,audienceE14,audienceE15,audienceE16,
-                audienceE21,audienceE22,audienceE23,audienceE24,audienceE25,audienceE26,
-                audienceE31,audienceE32,audienceE33,audienceE34,audienceE35,audienceE36,
-                audienceE41,audienceE42,audienceE43,audienceE44,audienceE45,audienceE46)
-            lessonNum6 = arrayOf(audienceF11,audienceF12,audienceF13,audienceF14,audienceF15,audienceF16,
-                audienceF21,audienceF22,audienceF23,audienceF24,audienceF25,audienceF26,
-                audienceF31,audienceF32,audienceF33,audienceF34,audienceF35,audienceF36,
-                audienceF41,audienceF42,audienceF43,audienceF44,audienceF45,audienceF46)
-            //Визуальная часть (убирает кнопку, показывает таблицу
-            val conL : ConstraintLayout = findViewById(R.id.constraintLayout)
-            conL.visibility = View.GONE
-            //Кнопки управления, делаю их видимыми
-            animationBtn(findViewById<Button>(R.id.backBtn))
-            animationBtn(findViewById<Button>(R.id.forwardBtn))
-            val objectAnimator = ObjectAnimator.ofFloat(view as Button, "translationY", 200f)
-            objectAnimator.duration = 800
-            objectAnimator.start()
-            animationTitle(findViewById<TextView>(R.id.textViewTitle))
-
-            writeAudienceAtTextView()
-        }
-        catch (e : Exception) {
-            Toast.makeText(this, "Подождите...", Toast.LENGTH_SHORT).show()
-        }
-    }
     //Функция разбивает textView и получается массив, элементы
     //которого идут параметрами для создания объекта аудитория, а после возращает его
     fun getAudiendeFromTextView(textView : TextView) : Audience {
@@ -515,162 +151,6 @@ class MainActivity : AppCompatActivity() {
         return Audience(infoList[0].toInt(),infoList[1])
     }
 
-    //Функция вписывает в textView данные в правильном формате
-    fun writeAudienceAtTextView() {
-        //Пара номер 1
-        doWriteAudienceAtTextView(lessonNum1,0,findViewById(R.id.a11)) //Аудитория 11
-        doWriteAudienceAtTextView(lessonNum1,1,findViewById(R.id.a12)) //Аудитория 12
-        doWriteAudienceAtTextView(lessonNum1,2,findViewById(R.id.a13)) //Аудитория 13
-        doWriteAudienceAtTextView(lessonNum1,3,findViewById(R.id.a14)) //Аудитория 14
-        doWriteAudienceAtTextView(lessonNum1,4,findViewById(R.id.a15)) //Аудитория 15
-        doWriteAudienceAtTextView(lessonNum1,5,findViewById(R.id.a16)) //Аудитория 16
-        doWriteAudienceAtTextView(lessonNum1,6,findViewById(R.id.a21)) //Аудитория 21
-        doWriteAudienceAtTextView(lessonNum1,7,findViewById(R.id.a22)) //Аудитория 22
-        doWriteAudienceAtTextView(lessonNum1,8,findViewById(R.id.a23)) //Аудитория 23
-        doWriteAudienceAtTextView(lessonNum1,9,findViewById(R.id.a24)) //Аудитория 24
-        doWriteAudienceAtTextView(lessonNum1,10,findViewById(R.id.a25))//Аудитория 24
-        doWriteAudienceAtTextView(lessonNum1,11,findViewById(R.id.a26))//Аудитория 26
-        doWriteAudienceAtTextView(lessonNum1,12,findViewById(R.id.a31))//Аудитория 31
-        doWriteAudienceAtTextView(lessonNum1,13,findViewById(R.id.a32))//Аудитория 32
-        doWriteAudienceAtTextView(lessonNum1,14,findViewById(R.id.a33))//Аудитория 33
-        doWriteAudienceAtTextView(lessonNum1,15,findViewById(R.id.a34))//Аудитория 34
-        doWriteAudienceAtTextView(lessonNum1,16,findViewById(R.id.a35))//Аудитория 35
-        doWriteAudienceAtTextView(lessonNum1,17,findViewById(R.id.a36))//Аудитория 36
-        doWriteAudienceAtTextView(lessonNum1,18,findViewById(R.id.a41))//Аудитория 41
-        doWriteAudienceAtTextView(lessonNum1,19,findViewById(R.id.a42))//Аудитория 42
-        doWriteAudienceAtTextView(lessonNum1,20,findViewById(R.id.a43))//Аудитория 43
-        doWriteAudienceAtTextView(lessonNum1,21,findViewById(R.id.a44))//Аудитория 44
-        doWriteAudienceAtTextView(lessonNum1,22,findViewById(R.id.a45))//Аудитория 45
-        doWriteAudienceAtTextView(lessonNum1,23,findViewById(R.id.a46))//Аудитория 46
-        //Пара номер 2
-        doWriteAudienceAtTextView(lessonNum2,0,findViewById(R.id.b11)) //Аудитория 11
-        doWriteAudienceAtTextView(lessonNum2,1,findViewById(R.id.b12)) //Аудитория 12
-        doWriteAudienceAtTextView(lessonNum2,2,findViewById(R.id.b13)) //Аудитория 13
-        doWriteAudienceAtTextView(lessonNum2,3,findViewById(R.id.b14)) //Аудитория 14
-        doWriteAudienceAtTextView(lessonNum2,4,findViewById(R.id.b15)) //Аудитория 15
-        doWriteAudienceAtTextView(lessonNum2,5,findViewById(R.id.b16)) //Аудитория 16
-        doWriteAudienceAtTextView(lessonNum2,6,findViewById(R.id.b21)) //Аудитория 21
-        doWriteAudienceAtTextView(lessonNum2,7,findViewById(R.id.b22)) //Аудитория 22
-        doWriteAudienceAtTextView(lessonNum2,8,findViewById(R.id.b23)) //Аудитория 23
-        doWriteAudienceAtTextView(lessonNum2,9,findViewById(R.id.b24)) //Аудитория 24
-        doWriteAudienceAtTextView(lessonNum2,10,findViewById(R.id.b25))//Аудитория 25
-        doWriteAudienceAtTextView(lessonNum2,11,findViewById(R.id.b26))//Аудитория 26
-        doWriteAudienceAtTextView(lessonNum2,12,findViewById(R.id.b31))//Аудитория 31
-        doWriteAudienceAtTextView(lessonNum2,13,findViewById(R.id.b32))//Аудитория 32
-        doWriteAudienceAtTextView(lessonNum2,14,findViewById(R.id.b33))//Аудитория 33
-        doWriteAudienceAtTextView(lessonNum2,15,findViewById(R.id.b34))//Аудитория 34
-        doWriteAudienceAtTextView(lessonNum2,16,findViewById(R.id.b35))//Аудитория 35
-        doWriteAudienceAtTextView(lessonNum2,17,findViewById(R.id.b36))//Аудитория 36
-        doWriteAudienceAtTextView(lessonNum2,18,findViewById(R.id.b41))//Аудитория 41
-        doWriteAudienceAtTextView(lessonNum2,19,findViewById(R.id.b42))//Аудитория 42
-        doWriteAudienceAtTextView(lessonNum2,20,findViewById(R.id.b43))//Аудитория 43
-        doWriteAudienceAtTextView(lessonNum2,21,findViewById(R.id.b44))//Аудитория 44
-        doWriteAudienceAtTextView(lessonNum2,22,findViewById(R.id.b45))//Аудитория 45
-        doWriteAudienceAtTextView(lessonNum2,23,findViewById(R.id.b46))//Аудитория 46
-        //Пара номер 3
-        doWriteAudienceAtTextView(lessonNum3,0,findViewById(R.id.c11)) //Аудитория 11
-        doWriteAudienceAtTextView(lessonNum3,1,findViewById(R.id.c12)) //Аудитория 12
-        doWriteAudienceAtTextView(lessonNum3,2,findViewById(R.id.c13)) //Аудитория 13
-        doWriteAudienceAtTextView(lessonNum3,3,findViewById(R.id.c14)) //Аудитория 14
-        doWriteAudienceAtTextView(lessonNum3,4,findViewById(R.id.c15)) //Аудитория 15
-        doWriteAudienceAtTextView(lessonNum3,5,findViewById(R.id.c16)) //Аудитория 16
-        doWriteAudienceAtTextView(lessonNum3,6,findViewById(R.id.c21)) //Аудитория 21
-        doWriteAudienceAtTextView(lessonNum3,7,findViewById(R.id.c22)) //Аудитория 22
-        doWriteAudienceAtTextView(lessonNum3,8,findViewById(R.id.c23)) //Аудитория 23
-        doWriteAudienceAtTextView(lessonNum3,9,findViewById(R.id.c24)) //Аудитория 24
-        doWriteAudienceAtTextView(lessonNum3,10,findViewById(R.id.c25))//Аудитория 25
-        doWriteAudienceAtTextView(lessonNum3,11,findViewById(R.id.c26))//Аудитория 26
-        doWriteAudienceAtTextView(lessonNum3,12,findViewById(R.id.c31))//Аудитория 31
-        doWriteAudienceAtTextView(lessonNum3,13,findViewById(R.id.c32))//Аудитория 32
-        doWriteAudienceAtTextView(lessonNum3,14,findViewById(R.id.c33))//Аудитория 33
-        doWriteAudienceAtTextView(lessonNum3,15,findViewById(R.id.c34))//Аудитория 34
-        doWriteAudienceAtTextView(lessonNum3,16,findViewById(R.id.c35))//Аудитория 35
-        doWriteAudienceAtTextView(lessonNum3,17,findViewById(R.id.c36))//Аудитория 36
-        doWriteAudienceAtTextView(lessonNum3,18,findViewById(R.id.c41))//Аудитория 41
-        doWriteAudienceAtTextView(lessonNum3,19,findViewById(R.id.c42))//Аудитория 42
-        doWriteAudienceAtTextView(lessonNum3,20,findViewById(R.id.c43))//Аудитория 43
-        doWriteAudienceAtTextView(lessonNum3,21,findViewById(R.id.c44))//Аудитория 44
-        doWriteAudienceAtTextView(lessonNum3,22,findViewById(R.id.c45))//Аудитория 45
-        doWriteAudienceAtTextView(lessonNum3,23,findViewById(R.id.c46))//Аудитория 46
-        //Пара номер 4
-        doWriteAudienceAtTextView(lessonNum4,0,findViewById(R.id.d11)) //Аудитория 11
-        doWriteAudienceAtTextView(lessonNum4,1,findViewById(R.id.d12)) //Аудитория 12
-        doWriteAudienceAtTextView(lessonNum4,2,findViewById(R.id.d13)) //Аудитория 13
-        doWriteAudienceAtTextView(lessonNum4,3,findViewById(R.id.d14)) //Аудитория 14
-        doWriteAudienceAtTextView(lessonNum4,4,findViewById(R.id.d15)) //Аудитория 15
-        doWriteAudienceAtTextView(lessonNum4,5,findViewById(R.id.d16)) //Аудитория 16
-        doWriteAudienceAtTextView(lessonNum4,6,findViewById(R.id.d21)) //Аудитория 21
-        doWriteAudienceAtTextView(lessonNum4,7,findViewById(R.id.d22)) //Аудитория 22
-        doWriteAudienceAtTextView(lessonNum4,8,findViewById(R.id.d23)) //Аудитория 23
-        doWriteAudienceAtTextView(lessonNum4,9,findViewById(R.id.d24)) //Аудитория 24
-        doWriteAudienceAtTextView(lessonNum4,10,findViewById(R.id.d25))//Аудитория 25
-        doWriteAudienceAtTextView(lessonNum4,11,findViewById(R.id.d26))//Аудитория 26
-        doWriteAudienceAtTextView(lessonNum4,12,findViewById(R.id.d31))//Аудитория 31
-        doWriteAudienceAtTextView(lessonNum4,13,findViewById(R.id.d32))//Аудитория 32
-        doWriteAudienceAtTextView(lessonNum4,14,findViewById(R.id.d33))//Аудитория 33
-        doWriteAudienceAtTextView(lessonNum4,15,findViewById(R.id.d34))//Аудитория 34
-        doWriteAudienceAtTextView(lessonNum4,16,findViewById(R.id.d35))//Аудитория 35
-        doWriteAudienceAtTextView(lessonNum4,17,findViewById(R.id.d36))//Аудитория 36
-        doWriteAudienceAtTextView(lessonNum4,18,findViewById(R.id.d41))//Аудитория 41
-        doWriteAudienceAtTextView(lessonNum4,19,findViewById(R.id.d42))//Аудитория 42
-        doWriteAudienceAtTextView(lessonNum4,20,findViewById(R.id.d43))//Аудитория 43
-        doWriteAudienceAtTextView(lessonNum4,21,findViewById(R.id.d44))//Аудитория 44
-        doWriteAudienceAtTextView(lessonNum4,22,findViewById(R.id.d45))//Аудитория 45
-        doWriteAudienceAtTextView(lessonNum4,23,findViewById(R.id.d46))//Аудитория 46
-        //Пара номер 5
-        doWriteAudienceAtTextView(lessonNum5,0,findViewById(R.id.e11)) //Аудитория 11
-        doWriteAudienceAtTextView(lessonNum5,1,findViewById(R.id.e12)) //Аудитория 12
-        doWriteAudienceAtTextView(lessonNum5,2,findViewById(R.id.e13)) //Аудитория 13
-        doWriteAudienceAtTextView(lessonNum5,3,findViewById(R.id.e14)) //Аудитория 14
-        doWriteAudienceAtTextView(lessonNum5,4,findViewById(R.id.e15)) //Аудитория 15
-        doWriteAudienceAtTextView(lessonNum5,5,findViewById(R.id.e16)) //Аудитория 16
-        doWriteAudienceAtTextView(lessonNum5,6,findViewById(R.id.e21)) //Аудитория 21
-        doWriteAudienceAtTextView(lessonNum5,7,findViewById(R.id.e22)) //Аудитория 22
-        doWriteAudienceAtTextView(lessonNum5,8,findViewById(R.id.e23)) //Аудитория 23
-        doWriteAudienceAtTextView(lessonNum5,9,findViewById(R.id.e24)) //Аудитория 24
-        doWriteAudienceAtTextView(lessonNum5,10,findViewById(R.id.e25))//Аудитория 25
-        doWriteAudienceAtTextView(lessonNum5,11,findViewById(R.id.e26))//Аудитория 26
-        doWriteAudienceAtTextView(lessonNum5,12,findViewById(R.id.e31))//Аудитория 31
-        doWriteAudienceAtTextView(lessonNum5,13,findViewById(R.id.e32))//Аудитория 32
-        doWriteAudienceAtTextView(lessonNum5,14,findViewById(R.id.e33))//Аудитория 33
-        doWriteAudienceAtTextView(lessonNum5,15,findViewById(R.id.e34))//Аудитория 34
-        doWriteAudienceAtTextView(lessonNum5,16,findViewById(R.id.e35))//Аудитория 35
-        doWriteAudienceAtTextView(lessonNum5,17,findViewById(R.id.e36))//Аудитория 36
-        doWriteAudienceAtTextView(lessonNum5,18,findViewById(R.id.e41))//Аудитория 41
-        doWriteAudienceAtTextView(lessonNum5,19,findViewById(R.id.e42))//Аудитория 42
-        doWriteAudienceAtTextView(lessonNum5,20,findViewById(R.id.e43))//Аудитория 43
-        doWriteAudienceAtTextView(lessonNum5,21,findViewById(R.id.e44))//Аудитория 44
-        doWriteAudienceAtTextView(lessonNum5,22,findViewById(R.id.e45))//Аудитория 45
-        doWriteAudienceAtTextView(lessonNum5,23,findViewById(R.id.e46))//Аудитория 46
-        //Пара номер 6
-        doWriteAudienceAtTextView(lessonNum6,0,findViewById(R.id.f11)) //Аудитория 11
-        doWriteAudienceAtTextView(lessonNum6,1,findViewById(R.id.f12)) //Аудитория 12
-        doWriteAudienceAtTextView(lessonNum6,2,findViewById(R.id.f13)) //Аудитория 13
-        doWriteAudienceAtTextView(lessonNum6,3,findViewById(R.id.f14)) //Аудитория 14
-        doWriteAudienceAtTextView(lessonNum6,4,findViewById(R.id.f15)) //Аудитория 15
-        doWriteAudienceAtTextView(lessonNum6,5,findViewById(R.id.f16)) //Аудитория 16
-        doWriteAudienceAtTextView(lessonNum6,6,findViewById(R.id.f21)) //Аудитория 21
-        doWriteAudienceAtTextView(lessonNum6,7,findViewById(R.id.f22)) //Аудитория 22
-        doWriteAudienceAtTextView(lessonNum6,8,findViewById(R.id.f23)) //Аудитория 23
-        doWriteAudienceAtTextView(lessonNum6,9,findViewById(R.id.f24)) //Аудитория 24
-        doWriteAudienceAtTextView(lessonNum6,10,findViewById(R.id.f25))//Аудитория 25
-        doWriteAudienceAtTextView(lessonNum6,11,findViewById(R.id.f26))//Аудитория 26
-        doWriteAudienceAtTextView(lessonNum6,12,findViewById(R.id.f31))//Аудитория 31
-        doWriteAudienceAtTextView(lessonNum6,13,findViewById(R.id.f32))//Аудитория 32
-        doWriteAudienceAtTextView(lessonNum6,14,findViewById(R.id.f33))//Аудитория 33
-        doWriteAudienceAtTextView(lessonNum6,15,findViewById(R.id.f34))//Аудитория 34
-        doWriteAudienceAtTextView(lessonNum6,16,findViewById(R.id.f35))//Аудитория 35
-        doWriteAudienceAtTextView(lessonNum6,17,findViewById(R.id.f36))//Аудитория 36
-        doWriteAudienceAtTextView(lessonNum6,18,findViewById(R.id.f41))//Аудитория 41
-        doWriteAudienceAtTextView(lessonNum6,19,findViewById(R.id.f42))//Аудитория 42
-        doWriteAudienceAtTextView(lessonNum6,20,findViewById(R.id.f43))//Аудитория 43
-        doWriteAudienceAtTextView(lessonNum6,21,findViewById(R.id.f44))//Аудитория 44
-        doWriteAudienceAtTextView(lessonNum6,22,findViewById(R.id.f45))//Аудитория 45
-        doWriteAudienceAtTextView(lessonNum6,23,findViewById(R.id.f46))//Аудитория 46
-
-        //Добавляет textView событые двойного клика
-        addObrEvenForBtn()
-    }
     fun doWriteAudienceAtTextView(lessonArray : Array<Audience>,num : Int, texyView : TextView) {
         val builder = SpannableStringBuilder()
         val firstPart = lessonArray[num].numberAudience.toString() + "\n"
@@ -910,6 +390,53 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+
+    fun doAddObrEvenForBtn1(textView: TextView, numberAudience : String, idTextView : Int, word : String, numberLesson: String) {
+        textView.setOnTouchListener(object : View.OnTouchListener {
+            private var lastClickTime: Long = 0
+
+            override fun onTouch(v: View, event: MotionEvent): Boolean {
+                if (event.action == MotionEvent.ACTION_UP) {
+                    val clickTime = System.currentTimeMillis()
+                    if (clickTime - lastClickTime < 500) {
+                        if(isLessonOver[numberLesson.toInt() - 1] == false) {
+                            if(findViewById<TextView>(idTextView).currentTextColor == getColor(R.color.red)) {
+                                val intent : Intent = Intent(this@MainActivity, FreeTheAudience::class.java)
+                                intent.putExtra("numberLesson", numberLesson)
+                                intent.putExtra("word", word)
+                                intent.putExtra("numberAudience", numberAudience)
+                                mStartForResult?.launch(intent)
+                            }
+                            else {
+                                val intent : Intent = Intent(this@MainActivity, OccupyTheAudiences::class.java)
+                                intent.putExtra("numberLesson", numberLesson)
+                                intent.putExtra("word", word)
+                                intent.putExtra("numberAudience", numberAudience)
+                                mStartForResult2?.launch(intent)
+                            }
+                        }
+                        else {
+                            Toast.makeText(applicationContext, "Пара уже прошла! Занять/освободить аудиторию невозможно!", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                    lastClickTime = clickTime
+                }
+                return true
+            }
+        })
+    }
+
+//}
+
+
+
+
+    
+
+
+
+
+
     //Добавляет всем textView событие двойного клика
     fun addObrEvenForBtn() {
         //Для первой пары
@@ -1063,38 +590,525 @@ class MainActivity : AppCompatActivity() {
         doAddObrEvenForBtn1(findViewById<TextView>(R.id.f45),"45", getResources().getIdentifier("f45", "id",packageName), "f","6")
         doAddObrEvenForBtn1(findViewById<TextView>(R.id.f46),"46", getResources().getIdentifier("f46", "id",packageName), "f","6")
     }
-    fun doAddObrEvenForBtn1(textView: TextView, numberAudience : String, idTextView : Int, word : String, numberLesson: String) {
-        textView.setOnTouchListener(object : View.OnTouchListener {
-            private var lastClickTime: Long = 0
+    fun writeShelderAtTextView() {
+        //Аудитрия 11
+        writeToTextViewAudienceInfo(1,11,findViewById(R.id.a11))
+        writeToTextViewAudienceInfo(2,11,findViewById(R.id.b11))
+        writeToTextViewAudienceInfo(3,11,findViewById(R.id.c11))
+        writeToTextViewAudienceInfo(4,11,findViewById(R.id.d11))
+        writeToTextViewAudienceInfo(5,11,findViewById(R.id.e11))
+        writeToTextViewAudienceInfo(6,11,findViewById(R.id.f11))
+        //Аудитрия 12
+        writeToTextViewAudienceInfo(1,12,findViewById(R.id.a12))
+        writeToTextViewAudienceInfo(2,12,findViewById(R.id.b12))
+        writeToTextViewAudienceInfo(3,12,findViewById(R.id.c12))
+        writeToTextViewAudienceInfo(4,12,findViewById(R.id.d12))
+        writeToTextViewAudienceInfo(5,12,findViewById(R.id.e12))
+        writeToTextViewAudienceInfo(6,12,findViewById(R.id.f12))
+        //Аудитрия 13
+        writeToTextViewAudienceInfo(1,13,findViewById(R.id.a13))
+        writeToTextViewAudienceInfo(2,13,findViewById(R.id.b13))
+        writeToTextViewAudienceInfo(3,13,findViewById(R.id.c13))
+        writeToTextViewAudienceInfo(4,13,findViewById(R.id.d13))
+        writeToTextViewAudienceInfo(5,13,findViewById(R.id.e13))
+        writeToTextViewAudienceInfo(6,13,findViewById(R.id.f13))
+        //Аудитрия 14
+        writeToTextViewAudienceInfo(1,14,findViewById(R.id.a14))
+        writeToTextViewAudienceInfo(2,14,findViewById(R.id.b14))
+        writeToTextViewAudienceInfo(3,14,findViewById(R.id.c14))
+        writeToTextViewAudienceInfo(4,14,findViewById(R.id.d14))
+        writeToTextViewAudienceInfo(5,14,findViewById(R.id.e14))
+        writeToTextViewAudienceInfo(6,14,findViewById(R.id.f14))
+        //Аудитрия 15
+        writeToTextViewAudienceInfo(1,15,findViewById(R.id.a15))
+        writeToTextViewAudienceInfo(2,15,findViewById(R.id.b15))
+        writeToTextViewAudienceInfo(3,15,findViewById(R.id.c15))
+        writeToTextViewAudienceInfo(4,15,findViewById(R.id.d15))
+        writeToTextViewAudienceInfo(5,15,findViewById(R.id.e15))
+        writeToTextViewAudienceInfo(6,15,findViewById(R.id.f15))
+        //Аудитрия 16
+        writeToTextViewAudienceInfo(1,16,findViewById(R.id.a16))
+        writeToTextViewAudienceInfo(2,16,findViewById(R.id.b16))
+        writeToTextViewAudienceInfo(3,16,findViewById(R.id.c16))
+        writeToTextViewAudienceInfo(4,16,findViewById(R.id.d16))
+        writeToTextViewAudienceInfo(5,16,findViewById(R.id.e16))
+        writeToTextViewAudienceInfo(6,16,findViewById(R.id.f16))
+        //Аудитрия 21
+        writeToTextViewAudienceInfo(1,21,findViewById(R.id.a21))
+        writeToTextViewAudienceInfo(2,21,findViewById(R.id.b21))
+        writeToTextViewAudienceInfo(3,21,findViewById(R.id.c21))
+        writeToTextViewAudienceInfo(4,21,findViewById(R.id.d21))
+        writeToTextViewAudienceInfo(5,21,findViewById(R.id.e21))
+        writeToTextViewAudienceInfo(6,21,findViewById(R.id.f21))
+        //Аудитрия 22
+        writeToTextViewAudienceInfo(1,22,findViewById(R.id.a22))
+        writeToTextViewAudienceInfo(2,22,findViewById(R.id.b22))
+        writeToTextViewAudienceInfo(3,22,findViewById(R.id.c22))
+        writeToTextViewAudienceInfo(4,22,findViewById(R.id.d22))
+        writeToTextViewAudienceInfo(5,22,findViewById(R.id.e22))
+        writeToTextViewAudienceInfo(6,22,findViewById(R.id.f22))
+        //Аудитрия 23
+        writeToTextViewAudienceInfo(1,23,findViewById(R.id.a23))
+        writeToTextViewAudienceInfo(2,23,findViewById(R.id.b23))
+        writeToTextViewAudienceInfo(3,23,findViewById(R.id.c23))
+        writeToTextViewAudienceInfo(4,23,findViewById(R.id.d23))
+        writeToTextViewAudienceInfo(5,23,findViewById(R.id.e23))
+        writeToTextViewAudienceInfo(6,23,findViewById(R.id.f23))
+        //Аудитрия 24
+        writeToTextViewAudienceInfo(1,24,findViewById(R.id.a24))
+        writeToTextViewAudienceInfo(2,24,findViewById(R.id.b24))
+        writeToTextViewAudienceInfo(3,24,findViewById(R.id.c24))
+        writeToTextViewAudienceInfo(4,24,findViewById(R.id.d24))
+        writeToTextViewAudienceInfo(5,24,findViewById(R.id.e24))
+        writeToTextViewAudienceInfo(6,24,findViewById(R.id.f24))
+        //Аудитрия 25
+        writeToTextViewAudienceInfo(1,25,findViewById(R.id.a25))
+        writeToTextViewAudienceInfo(2,25,findViewById(R.id.b25))
+        writeToTextViewAudienceInfo(3,25,findViewById(R.id.c25))
+        writeToTextViewAudienceInfo(4,25,findViewById(R.id.d25))
+        writeToTextViewAudienceInfo(5,25,findViewById(R.id.e25))
+        writeToTextViewAudienceInfo(6,25,findViewById(R.id.f25))
+        //Аудитрия 26
+        writeToTextViewAudienceInfo(1,26,findViewById(R.id.a26))
+        writeToTextViewAudienceInfo(2,26,findViewById(R.id.b26))
+        writeToTextViewAudienceInfo(3,26,findViewById(R.id.c26))
+        writeToTextViewAudienceInfo(4,26,findViewById(R.id.d26))
+        writeToTextViewAudienceInfo(5,26,findViewById(R.id.e26))
+        writeToTextViewAudienceInfo(6,26,findViewById(R.id.f26))
+        //Аудитрия 31
+        writeToTextViewAudienceInfo(1,31,findViewById(R.id.a31))
+        writeToTextViewAudienceInfo(2,31,findViewById(R.id.b31))
+        writeToTextViewAudienceInfo(3,31,findViewById(R.id.c31))
+        writeToTextViewAudienceInfo(4,31,findViewById(R.id.d31))
+        writeToTextViewAudienceInfo(5,31,findViewById(R.id.e31))
+        writeToTextViewAudienceInfo(6,31,findViewById(R.id.f31))
+        //Аудитрия 32
+        writeToTextViewAudienceInfo(1,32,findViewById(R.id.a32))
+        writeToTextViewAudienceInfo(2,32,findViewById(R.id.b32))
+        writeToTextViewAudienceInfo(3,32,findViewById(R.id.c32))
+        writeToTextViewAudienceInfo(4,32,findViewById(R.id.d32))
+        writeToTextViewAudienceInfo(5,32,findViewById(R.id.e32))
+        writeToTextViewAudienceInfo(6,32,findViewById(R.id.f32))
+        //Аудитрия 33
+        writeToTextViewAudienceInfo(1,33,findViewById(R.id.a33))
+        writeToTextViewAudienceInfo(2,33,findViewById(R.id.b33))
+        writeToTextViewAudienceInfo(3,33,findViewById(R.id.c33))
+        writeToTextViewAudienceInfo(4,33,findViewById(R.id.d33))
+        writeToTextViewAudienceInfo(5,33,findViewById(R.id.e33))
+        writeToTextViewAudienceInfo(6,33,findViewById(R.id.f33))
+        //Аудитрия 34
+        writeToTextViewAudienceInfo(1,34,findViewById(R.id.a34))
+        writeToTextViewAudienceInfo(2,34,findViewById(R.id.b34))
+        writeToTextViewAudienceInfo(3,34,findViewById(R.id.c34))
+        writeToTextViewAudienceInfo(4,34,findViewById(R.id.d34))
+        writeToTextViewAudienceInfo(5,34,findViewById(R.id.e34))
+        writeToTextViewAudienceInfo(6,34,findViewById(R.id.f34))
+        //Аудитрия 35
+        writeToTextViewAudienceInfo(1,35,findViewById(R.id.a35))
+        writeToTextViewAudienceInfo(2,35,findViewById(R.id.b35))
+        writeToTextViewAudienceInfo(3,35,findViewById(R.id.c35))
+        writeToTextViewAudienceInfo(4,35,findViewById(R.id.d35))
+        writeToTextViewAudienceInfo(5,35,findViewById(R.id.e35))
+        writeToTextViewAudienceInfo(6,35,findViewById(R.id.f35))
+        //Аудитрия 36
+        writeToTextViewAudienceInfo(1,36,findViewById(R.id.a36))
+        writeToTextViewAudienceInfo(2,36,findViewById(R.id.b36))
+        writeToTextViewAudienceInfo(3,36,findViewById(R.id.c36))
+        writeToTextViewAudienceInfo(4,36,findViewById(R.id.d36))
+        writeToTextViewAudienceInfo(5,36,findViewById(R.id.e36))
+        writeToTextViewAudienceInfo(6,36,findViewById(R.id.f36))
+        //Аудитрия 41
+        writeToTextViewAudienceInfo(1,41,findViewById(R.id.a41))
+        writeToTextViewAudienceInfo(2,41,findViewById(R.id.b41))
+        writeToTextViewAudienceInfo(3,41,findViewById(R.id.c41))
+        writeToTextViewAudienceInfo(4,41,findViewById(R.id.d41))
+        writeToTextViewAudienceInfo(5,41,findViewById(R.id.e41))
+        writeToTextViewAudienceInfo(6,41,findViewById(R.id.f41))
+        //Аудитрия 42
+        writeToTextViewAudienceInfo(1,42,findViewById(R.id.a42))
+        writeToTextViewAudienceInfo(2,42,findViewById(R.id.b42))
+        writeToTextViewAudienceInfo(3,42,findViewById(R.id.c42))
+        writeToTextViewAudienceInfo(4,42,findViewById(R.id.d42))
+        writeToTextViewAudienceInfo(5,42,findViewById(R.id.e42))
+        writeToTextViewAudienceInfo(6,42,findViewById(R.id.f42))
+        //Аудитрия 43
+        writeToTextViewAudienceInfo(1,43,findViewById(R.id.a43))
+        writeToTextViewAudienceInfo(2,43,findViewById(R.id.b43))
+        writeToTextViewAudienceInfo(3,43,findViewById(R.id.c43))
+        writeToTextViewAudienceInfo(4,43,findViewById(R.id.d43))
+        writeToTextViewAudienceInfo(5,43,findViewById(R.id.e43))
+        writeToTextViewAudienceInfo(6,43,findViewById(R.id.f43))
+        //Аудитрия 44
+        writeToTextViewAudienceInfo(1,44,findViewById(R.id.a44))
+        writeToTextViewAudienceInfo(2,44,findViewById(R.id.b44))
+        writeToTextViewAudienceInfo(3,44,findViewById(R.id.c44))
+        writeToTextViewAudienceInfo(4,44,findViewById(R.id.d44))
+        writeToTextViewAudienceInfo(5,44,findViewById(R.id.e44))
+        writeToTextViewAudienceInfo(6,44,findViewById(R.id.f44))
+        //Аудитрия 45
+        writeToTextViewAudienceInfo(1,45,findViewById(R.id.a45))
+        writeToTextViewAudienceInfo(2,45,findViewById(R.id.b45))
+        writeToTextViewAudienceInfo(3,45,findViewById(R.id.c45))
+        writeToTextViewAudienceInfo(4,45,findViewById(R.id.d45))
+        writeToTextViewAudienceInfo(5,45,findViewById(R.id.e45))
+        writeToTextViewAudienceInfo(6,45,findViewById(R.id.f45))
+        //Аудитрия 46
+        writeToTextViewAudienceInfo(1,46,findViewById(R.id.a46))
+        writeToTextViewAudienceInfo(2,46,findViewById(R.id.b46))
+        writeToTextViewAudienceInfo(3,46,findViewById(R.id.c46))
+        writeToTextViewAudienceInfo(4,46,findViewById(R.id.d46))
+        writeToTextViewAudienceInfo(5,46,findViewById(R.id.e46))
+        writeToTextViewAudienceInfo(6,46,findViewById(R.id.f46))
+    }
+    //Функция в которой много раз вызывается функция getAudiendeFromTextView для всех аудиторий, и составляются массива с номером пары
+    fun getAudiencesFromTextView(view: View) {
+        try {
+            //Пара 1
+            val audienceA11 : Audience = getAudiendeFromTextView(findViewById(R.id.a11)) //Аудитория 11
+            val audienceA12 : Audience = getAudiendeFromTextView(findViewById(R.id.a12)) //Аудитория 12
+            val audienceA13 : Audience = getAudiendeFromTextView(findViewById(R.id.a13)) //Аудитория 13
+            val audienceA14 : Audience = getAudiendeFromTextView(findViewById(R.id.a14)) //Аудитория 14
+            val audienceA15 : Audience = getAudiendeFromTextView(findViewById(R.id.a15)) //Аудитория 15
+            val audienceA16 : Audience = getAudiendeFromTextView(findViewById(R.id.a16)) //Аудитория 16
+            val audienceA21 : Audience = getAudiendeFromTextView(findViewById(R.id.a21)) //Аудитория 21
+            val audienceA22 : Audience = getAudiendeFromTextView(findViewById(R.id.a22)) //Аудитория 22
+            val audienceA23 : Audience = getAudiendeFromTextView(findViewById(R.id.a23)) //Аудитория 23
+            val audienceA24 : Audience = getAudiendeFromTextView(findViewById(R.id.a24)) //Аудитория 24
+            val audienceA25 : Audience = getAudiendeFromTextView(findViewById(R.id.a25)) //Аудитория 25
+            val audienceA26 : Audience = getAudiendeFromTextView(findViewById(R.id.a26)) //Аудитория 26
+            val audienceA31 : Audience = getAudiendeFromTextView(findViewById(R.id.a31)) //Аудитория 31
+            val audienceA32 : Audience = getAudiendeFromTextView(findViewById(R.id.a32)) //Аудитория 32
+            val audienceA33 : Audience = getAudiendeFromTextView(findViewById(R.id.a33)) //Аудитория 33
+            val audienceA34 : Audience = getAudiendeFromTextView(findViewById(R.id.a34)) //Аудитория 34
+            val audienceA35 : Audience = getAudiendeFromTextView(findViewById(R.id.a35)) //Аудитория 35
+            val audienceA36 : Audience = getAudiendeFromTextView(findViewById(R.id.a36)) //Аудитория 36
+            val audienceA41 : Audience = getAudiendeFromTextView(findViewById(R.id.a41)) //Аудитория 41
+            val audienceA42 : Audience = getAudiendeFromTextView(findViewById(R.id.a42)) //Аудитория 42
+            val audienceA43 : Audience = getAudiendeFromTextView(findViewById(R.id.a43)) //Аудитория 43
+            val audienceA44 : Audience = getAudiendeFromTextView(findViewById(R.id.a44)) //Аудитория 44
+            val audienceA45 : Audience = getAudiendeFromTextView(findViewById(R.id.a45)) //Аудитория 45
+            val audienceA46 : Audience = getAudiendeFromTextView(findViewById(R.id.a46)) //Аудитория 46
+            //Пара номер 2
+            val audienceB11 : Audience = getAudiendeFromTextView(findViewById(R.id.b11)) //Аудитория 11
+            val audienceB12 : Audience = getAudiendeFromTextView(findViewById(R.id.b12)) //Аудитория 12
+            val audienceB13 : Audience = getAudiendeFromTextView(findViewById(R.id.b13)) //Аудитория 13
+            val audienceB14 : Audience = getAudiendeFromTextView(findViewById(R.id.b14)) //Аудитория 14
+            val audienceB15 : Audience = getAudiendeFromTextView(findViewById(R.id.b15)) //Аудитория 15
+            val audienceB16 : Audience = getAudiendeFromTextView(findViewById(R.id.b16)) //Аудитория 16
+            val audienceB21 : Audience = getAudiendeFromTextView(findViewById(R.id.b21)) //Аудитория 21
+            val audienceB22 : Audience = getAudiendeFromTextView(findViewById(R.id.b22)) //Аудитория 22
+            val audienceB23 : Audience = getAudiendeFromTextView(findViewById(R.id.b23)) //Аудитория 23
+            val audienceB24 : Audience = getAudiendeFromTextView(findViewById(R.id.b24)) //Аудитория 24
+            val audienceB25 : Audience = getAudiendeFromTextView(findViewById(R.id.b25)) //Аудитория 25
+            val audienceB26 : Audience = getAudiendeFromTextView(findViewById(R.id.b26)) //Аудитория 26
+            val audienceB31 : Audience = getAudiendeFromTextView(findViewById(R.id.b31)) //Аудитория 31
+            val audienceB32 : Audience = getAudiendeFromTextView(findViewById(R.id.b32)) //Аудитория 32
+            val audienceB33 : Audience = getAudiendeFromTextView(findViewById(R.id.b33)) //Аудитория 33
+            val audienceB34 : Audience = getAudiendeFromTextView(findViewById(R.id.b34)) //Аудитория 34
+            val audienceB35 : Audience = getAudiendeFromTextView(findViewById(R.id.b35)) //Аудитория 35
+            val audienceB36 : Audience = getAudiendeFromTextView(findViewById(R.id.b36)) //Аудитория 36
+            val audienceB41 : Audience = getAudiendeFromTextView(findViewById(R.id.b41)) //Аудитория 41
+            val audienceB42 : Audience = getAudiendeFromTextView(findViewById(R.id.b42)) //Аудитория 42
+            val audienceB43 : Audience = getAudiendeFromTextView(findViewById(R.id.b43)) //Аудитория 43
+            val audienceB44 : Audience = getAudiendeFromTextView(findViewById(R.id.b44)) //Аудитория 44
+            val audienceB45 : Audience = getAudiendeFromTextView(findViewById(R.id.b45)) //Аудитория 45
+            val audienceB46 : Audience = getAudiendeFromTextView(findViewById(R.id.b46)) //Аудитория 46
+            //Пара номер 3
+            val audienceC11 : Audience = getAudiendeFromTextView(findViewById(R.id.c11)) //Аудитория 11
+            val audienceC12 : Audience = getAudiendeFromTextView(findViewById(R.id.c12)) //Аудитория 12
+            val audienceC13 : Audience = getAudiendeFromTextView(findViewById(R.id.c13)) //Аудитория 13
+            val audienceC14 : Audience = getAudiendeFromTextView(findViewById(R.id.c14)) //Аудитория 14
+            val audienceC15 : Audience = getAudiendeFromTextView(findViewById(R.id.c15)) //Аудитория 15
+            val audienceC16 : Audience = getAudiendeFromTextView(findViewById(R.id.c16)) //Аудитория 16
+            val audienceC21 : Audience = getAudiendeFromTextView(findViewById(R.id.c21)) //Аудитория 21
+            val audienceC22 : Audience = getAudiendeFromTextView(findViewById(R.id.c22)) //Аудитория 22
+            val audienceC23 : Audience = getAudiendeFromTextView(findViewById(R.id.c23)) //Аудитория 23
+            val audienceC24 : Audience = getAudiendeFromTextView(findViewById(R.id.c24)) //Аудитория 24
+            val audienceC25 : Audience = getAudiendeFromTextView(findViewById(R.id.c25)) //Аудитория 25
+            val audienceC26 : Audience = getAudiendeFromTextView(findViewById(R.id.c26)) //Аудитория 26
+            val audienceC31 : Audience = getAudiendeFromTextView(findViewById(R.id.c31)) //Аудитория 31
+            val audienceC32 : Audience = getAudiendeFromTextView(findViewById(R.id.c32)) //Аудитория 32
+            val audienceC33 : Audience = getAudiendeFromTextView(findViewById(R.id.c33)) //Аудитория 33
+            val audienceC34 : Audience = getAudiendeFromTextView(findViewById(R.id.c34)) //Аудитория 34
+            val audienceC35 : Audience = getAudiendeFromTextView(findViewById(R.id.c35)) //Аудитория 35
+            val audienceC36 : Audience = getAudiendeFromTextView(findViewById(R.id.c36)) //Аудитория 36
+            val audienceC41 : Audience = getAudiendeFromTextView(findViewById(R.id.c41)) //Аудитория 41
+            val audienceC42 : Audience = getAudiendeFromTextView(findViewById(R.id.c42)) //Аудитория 42
+            val audienceC43 : Audience = getAudiendeFromTextView(findViewById(R.id.c43)) //Аудитория 43
+            val audienceC44 : Audience = getAudiendeFromTextView(findViewById(R.id.c44)) //Аудитория 44
+            val audienceC45 : Audience = getAudiendeFromTextView(findViewById(R.id.c45)) //Аудитория 45
+            val audienceC46 : Audience = getAudiendeFromTextView(findViewById(R.id.c46)) //Аудитория 46
+            //Пара номер 4
+            val audienceD11 : Audience = getAudiendeFromTextView(findViewById(R.id.d11)) //Аудитория 11
+            val audienceD12 : Audience = getAudiendeFromTextView(findViewById(R.id.d12)) //Аудитория 12
+            val audienceD13 : Audience = getAudiendeFromTextView(findViewById(R.id.d13)) //Аудитория 13
+            val audienceD14 : Audience = getAudiendeFromTextView(findViewById(R.id.d14)) //Аудитория 14
+            val audienceD15 : Audience = getAudiendeFromTextView(findViewById(R.id.d15)) //Аудитория 15
+            val audienceD16 : Audience = getAudiendeFromTextView(findViewById(R.id.d16)) //Аудитория 16
+            val audienceD21 : Audience = getAudiendeFromTextView(findViewById(R.id.d21)) //Аудитория 21
+            val audienceD22 : Audience = getAudiendeFromTextView(findViewById(R.id.d22)) //Аудитория 22
+            val audienceD23 : Audience = getAudiendeFromTextView(findViewById(R.id.d23)) //Аудитория 23
+            val audienceD24 : Audience = getAudiendeFromTextView(findViewById(R.id.d24)) //Аудитория 24
+            val audienceD25 : Audience = getAudiendeFromTextView(findViewById(R.id.d25)) //Аудитория 25
+            val audienceD26 : Audience = getAudiendeFromTextView(findViewById(R.id.d26)) //Аудитория 26
+            val audienceD31 : Audience = getAudiendeFromTextView(findViewById(R.id.d31)) //Аудитория 31
+            val audienceD32 : Audience = getAudiendeFromTextView(findViewById(R.id.d32)) //Аудитория 32
+            val audienceD33 : Audience = getAudiendeFromTextView(findViewById(R.id.d33)) //Аудитория 33
+            val audienceD34 : Audience = getAudiendeFromTextView(findViewById(R.id.d34)) //Аудитория 34
+            val audienceD35 : Audience = getAudiendeFromTextView(findViewById(R.id.d35)) //Аудитория 35
+            val audienceD36 : Audience = getAudiendeFromTextView(findViewById(R.id.d36)) //Аудитория 36
+            val audienceD41 : Audience = getAudiendeFromTextView(findViewById(R.id.d41)) //Аудитория 41
+            val audienceD42 : Audience = getAudiendeFromTextView(findViewById(R.id.d42)) //Аудитория 42
+            val audienceD43 : Audience = getAudiendeFromTextView(findViewById(R.id.d43)) //Аудитория 43
+            val audienceD44 : Audience = getAudiendeFromTextView(findViewById(R.id.d44)) //Аудитория 44
+            val audienceD45 : Audience = getAudiendeFromTextView(findViewById(R.id.d45)) //Аудитория 45
+            val audienceD46 : Audience = getAudiendeFromTextView(findViewById(R.id.d46)) //Аудитория 46
+            //Пара номер 5
+            val audienceE11 : Audience = getAudiendeFromTextView(findViewById(R.id.e11)) //Аудитория 11
+            val audienceE12 : Audience = getAudiendeFromTextView(findViewById(R.id.e12)) //Аудитория 12
+            val audienceE13 : Audience = getAudiendeFromTextView(findViewById(R.id.e13)) //Аудитория 13
+            val audienceE14 : Audience = getAudiendeFromTextView(findViewById(R.id.e14)) //Аудитория 14
+            val audienceE15 : Audience = getAudiendeFromTextView(findViewById(R.id.e15)) //Аудитория 15
+            val audienceE16 : Audience = getAudiendeFromTextView(findViewById(R.id.e16)) //Аудитория 16
+            val audienceE21 : Audience = getAudiendeFromTextView(findViewById(R.id.e21)) //Аудитория 21
+            val audienceE22 : Audience = getAudiendeFromTextView(findViewById(R.id.e22)) //Аудитория 22
+            val audienceE23 : Audience = getAudiendeFromTextView(findViewById(R.id.e23)) //Аудитория 23
+            val audienceE24 : Audience = getAudiendeFromTextView(findViewById(R.id.e24)) //Аудитория 24
+            val audienceE25 : Audience = getAudiendeFromTextView(findViewById(R.id.e25)) //Аудитория 25
+            val audienceE26 : Audience = getAudiendeFromTextView(findViewById(R.id.e26)) //Аудитория 26
+            val audienceE31 : Audience = getAudiendeFromTextView(findViewById(R.id.e31)) //Аудитория 31
+            val audienceE32 : Audience = getAudiendeFromTextView(findViewById(R.id.e32)) //Аудитория 32
+            val audienceE33 : Audience = getAudiendeFromTextView(findViewById(R.id.e33)) //Аудитория 33
+            val audienceE34 : Audience = getAudiendeFromTextView(findViewById(R.id.e34)) //Аудитория 34
+            val audienceE35 : Audience = getAudiendeFromTextView(findViewById(R.id.e35)) //Аудитория 35
+            val audienceE36 : Audience = getAudiendeFromTextView(findViewById(R.id.e36)) //Аудитория 36
+            val audienceE41 : Audience = getAudiendeFromTextView(findViewById(R.id.e41)) //Аудитория 41
+            val audienceE42 : Audience = getAudiendeFromTextView(findViewById(R.id.e42)) //Аудитория 42
+            val audienceE43 : Audience = getAudiendeFromTextView(findViewById(R.id.e43)) //Аудитория 43
+            val audienceE44 : Audience = getAudiendeFromTextView(findViewById(R.id.e44)) //Аудитория 44
+            val audienceE45 : Audience = getAudiendeFromTextView(findViewById(R.id.e45)) //Аудитория 45
+            val audienceE46 : Audience = getAudiendeFromTextView(findViewById(R.id.e46)) //Аудитория 46
+            //Пара номер 5
+            val audienceF11 : Audience = getAudiendeFromTextView(findViewById(R.id.f11)) //Аудитория 11
+            val audienceF12 : Audience = getAudiendeFromTextView(findViewById(R.id.f12)) //Аудитория 12
+            val audienceF13 : Audience = getAudiendeFromTextView(findViewById(R.id.f13)) //Аудитория 13
+            val audienceF14 : Audience = getAudiendeFromTextView(findViewById(R.id.f14)) //Аудитория 14
+            val audienceF15 : Audience = getAudiendeFromTextView(findViewById(R.id.f15)) //Аудитория 15
+            val audienceF16 : Audience = getAudiendeFromTextView(findViewById(R.id.f16)) //Аудитория 16
+            val audienceF21 : Audience = getAudiendeFromTextView(findViewById(R.id.f21)) //Аудитория 21
+            val audienceF22 : Audience = getAudiendeFromTextView(findViewById(R.id.f22)) //Аудитория 22
+            val audienceF23 : Audience = getAudiendeFromTextView(findViewById(R.id.f23)) //Аудитория 23
+            val audienceF24 : Audience = getAudiendeFromTextView(findViewById(R.id.f24)) //Аудитория 24
+            val audienceF25 : Audience = getAudiendeFromTextView(findViewById(R.id.f25)) //Аудитория 25
+            val audienceF26 : Audience = getAudiendeFromTextView(findViewById(R.id.f26)) //Аудитория 26
+            val audienceF31 : Audience = getAudiendeFromTextView(findViewById(R.id.f31)) //Аудитория 31
+            val audienceF32 : Audience = getAudiendeFromTextView(findViewById(R.id.f32)) //Аудитория 32
+            val audienceF33 : Audience = getAudiendeFromTextView(findViewById(R.id.f33)) //Аудитория 33
+            val audienceF34 : Audience = getAudiendeFromTextView(findViewById(R.id.f34)) //Аудитория 34
+            val audienceF35 : Audience = getAudiendeFromTextView(findViewById(R.id.f35)) //Аудитория 35
+            val audienceF36 : Audience = getAudiendeFromTextView(findViewById(R.id.f36)) //Аудитория 36
+            val audienceF41 : Audience = getAudiendeFromTextView(findViewById(R.id.f41)) //Аудитория 41
+            val audienceF42 : Audience = getAudiendeFromTextView(findViewById(R.id.f42)) //Аудитория 42
+            val audienceF43 : Audience = getAudiendeFromTextView(findViewById(R.id.f43)) //Аудитория 43
+            val audienceF44 : Audience = getAudiendeFromTextView(findViewById(R.id.f44)) //Аудитория 44
+            val audienceF45 : Audience = getAudiendeFromTextView(findViewById(R.id.f45)) //Аудитория 45
+            val audienceF46 : Audience = getAudiendeFromTextView(findViewById(R.id.f46)) //Аудитория 46
 
-            override fun onTouch(v: View, event: MotionEvent): Boolean {
-                if (event.action == MotionEvent.ACTION_UP) {
-                    val clickTime = System.currentTimeMillis()
-                    if (clickTime - lastClickTime < 500) {
-                        if(isLessonOver[numberLesson.toInt() - 1] == false) {
-                            if(findViewById<TextView>(idTextView).currentTextColor == getColor(R.color.red)) {
-                                val intent : Intent = Intent(this@MainActivity, FreeTheAudience::class.java)
-                                intent.putExtra("numberLesson", numberLesson)
-                                intent.putExtra("word", word)
-                                intent.putExtra("numberAudience", numberAudience)
-                                mStartForResult?.launch(intent)
-                            }
-                            else {
-                                val intent : Intent = Intent(this@MainActivity, OccupyTheAudiences::class.java)
-                                intent.putExtra("numberLesson", numberLesson)
-                                intent.putExtra("word", word)
-                                intent.putExtra("numberAudience", numberAudience)
-                                mStartForResult2?.launch(intent)
-                            }
-                        }
-                        else {
-                            Toast.makeText(applicationContext, "Пара уже прошла! Занять/освободить аудиторию невозможно!", Toast.LENGTH_SHORT).show()
-                        }
-                    }
-                    lastClickTime = clickTime
-                }
-                return true
-            }
-        })
+            lessonNum1 = arrayOf(audienceA11,audienceA12,audienceA13,audienceA14,audienceA15, audienceA16,
+                audienceA21,audienceA22,audienceA23,audienceA24,audienceA25,audienceA26,
+                audienceA31,audienceA32,audienceA33,audienceA34,audienceA35,audienceA36,
+                audienceA41,audienceA42,audienceA43,audienceA44,audienceA45,audienceA46)
+            lessonNum2 = arrayOf(audienceB11,audienceB12,audienceB13,audienceB14,audienceB15,audienceB16,
+                audienceB21,audienceB22,audienceB23,audienceB24,audienceB25,audienceB26,
+                audienceB31,audienceB32,audienceB33,audienceB34,audienceB35,audienceB36,
+                audienceB41,audienceB42,audienceB43,audienceB44,audienceB45,audienceB46)
+            lessonNum3 = arrayOf(audienceC11,audienceC12,audienceC13,audienceC14,audienceC15,audienceC16,
+                audienceC21,audienceC22,audienceC23,audienceC24,audienceC25,audienceC26,
+                audienceC31,audienceC32,audienceC33,audienceC34,audienceC35,audienceC36,
+                audienceC41,audienceC42,audienceC43,audienceC44,audienceC45,audienceC46)
+            lessonNum4 = arrayOf(audienceD11,audienceD12,audienceD13,audienceD14,audienceD15,audienceD16,
+                audienceD21,audienceD22,audienceD23,audienceD24,audienceD25,audienceD26,
+                audienceD31,audienceD32,audienceD33,audienceD34,audienceD35,audienceD36,
+                audienceD41,audienceD42,audienceD43,audienceD44,audienceD45,audienceD46)
+            lessonNum5 = arrayOf(audienceE11,audienceE12,audienceE13,audienceE14,audienceE15,audienceE16,
+                audienceE21,audienceE22,audienceE23,audienceE24,audienceE25,audienceE26,
+                audienceE31,audienceE32,audienceE33,audienceE34,audienceE35,audienceE36,
+                audienceE41,audienceE42,audienceE43,audienceE44,audienceE45,audienceE46)
+            lessonNum6 = arrayOf(audienceF11,audienceF12,audienceF13,audienceF14,audienceF15,audienceF16,
+                audienceF21,audienceF22,audienceF23,audienceF24,audienceF25,audienceF26,
+                audienceF31,audienceF32,audienceF33,audienceF34,audienceF35,audienceF36,
+                audienceF41,audienceF42,audienceF43,audienceF44,audienceF45,audienceF46)
+            //Визуальная часть (убирает кнопку, показывает таблицу
+            val conL : ConstraintLayout = findViewById(R.id.constraintLayout)
+            conL.visibility = View.GONE
+            //Кнопки управления, делаю их видимыми
+            animationBtn(findViewById<Button>(R.id.backBtn))
+            animationBtn(findViewById<Button>(R.id.forwardBtn))
+            val objectAnimator = ObjectAnimator.ofFloat(view as Button, "translationY", 200f)
+            objectAnimator.duration = 800
+            objectAnimator.start()
+            animationTitle(findViewById<TextView>(R.id.textViewTitle))
+
+            writeAudienceAtTextView()
+        }
+        catch (e : Exception) {
+            Toast.makeText(this, "Подождите...", Toast.LENGTH_SHORT).show()
+        }
+    }
+    //Функция вписывает в textView данные в правильном формате
+    fun writeAudienceAtTextView() {
+        //Пара номер 1
+        doWriteAudienceAtTextView(lessonNum1,0,findViewById(R.id.a11)) //Аудитория 11
+        doWriteAudienceAtTextView(lessonNum1,1,findViewById(R.id.a12)) //Аудитория 12
+        doWriteAudienceAtTextView(lessonNum1,2,findViewById(R.id.a13)) //Аудитория 13
+        doWriteAudienceAtTextView(lessonNum1,3,findViewById(R.id.a14)) //Аудитория 14
+        doWriteAudienceAtTextView(lessonNum1,4,findViewById(R.id.a15)) //Аудитория 15
+        doWriteAudienceAtTextView(lessonNum1,5,findViewById(R.id.a16)) //Аудитория 16
+        doWriteAudienceAtTextView(lessonNum1,6,findViewById(R.id.a21)) //Аудитория 21
+        doWriteAudienceAtTextView(lessonNum1,7,findViewById(R.id.a22)) //Аудитория 22
+        doWriteAudienceAtTextView(lessonNum1,8,findViewById(R.id.a23)) //Аудитория 23
+        doWriteAudienceAtTextView(lessonNum1,9,findViewById(R.id.a24)) //Аудитория 24
+        doWriteAudienceAtTextView(lessonNum1,10,findViewById(R.id.a25))//Аудитория 24
+        doWriteAudienceAtTextView(lessonNum1,11,findViewById(R.id.a26))//Аудитория 26
+        doWriteAudienceAtTextView(lessonNum1,12,findViewById(R.id.a31))//Аудитория 31
+        doWriteAudienceAtTextView(lessonNum1,13,findViewById(R.id.a32))//Аудитория 32
+        doWriteAudienceAtTextView(lessonNum1,14,findViewById(R.id.a33))//Аудитория 33
+        doWriteAudienceAtTextView(lessonNum1,15,findViewById(R.id.a34))//Аудитория 34
+        doWriteAudienceAtTextView(lessonNum1,16,findViewById(R.id.a35))//Аудитория 35
+        doWriteAudienceAtTextView(lessonNum1,17,findViewById(R.id.a36))//Аудитория 36
+        doWriteAudienceAtTextView(lessonNum1,18,findViewById(R.id.a41))//Аудитория 41
+        doWriteAudienceAtTextView(lessonNum1,19,findViewById(R.id.a42))//Аудитория 42
+        doWriteAudienceAtTextView(lessonNum1,20,findViewById(R.id.a43))//Аудитория 43
+        doWriteAudienceAtTextView(lessonNum1,21,findViewById(R.id.a44))//Аудитория 44
+        doWriteAudienceAtTextView(lessonNum1,22,findViewById(R.id.a45))//Аудитория 45
+        doWriteAudienceAtTextView(lessonNum1,23,findViewById(R.id.a46))//Аудитория 46
+        //Пара номер 2
+        doWriteAudienceAtTextView(lessonNum2,0,findViewById(R.id.b11)) //Аудитория 11
+        doWriteAudienceAtTextView(lessonNum2,1,findViewById(R.id.b12)) //Аудитория 12
+        doWriteAudienceAtTextView(lessonNum2,2,findViewById(R.id.b13)) //Аудитория 13
+        doWriteAudienceAtTextView(lessonNum2,3,findViewById(R.id.b14)) //Аудитория 14
+        doWriteAudienceAtTextView(lessonNum2,4,findViewById(R.id.b15)) //Аудитория 15
+        doWriteAudienceAtTextView(lessonNum2,5,findViewById(R.id.b16)) //Аудитория 16
+        doWriteAudienceAtTextView(lessonNum2,6,findViewById(R.id.b21)) //Аудитория 21
+        doWriteAudienceAtTextView(lessonNum2,7,findViewById(R.id.b22)) //Аудитория 22
+        doWriteAudienceAtTextView(lessonNum2,8,findViewById(R.id.b23)) //Аудитория 23
+        doWriteAudienceAtTextView(lessonNum2,9,findViewById(R.id.b24)) //Аудитория 24
+        doWriteAudienceAtTextView(lessonNum2,10,findViewById(R.id.b25))//Аудитория 25
+        doWriteAudienceAtTextView(lessonNum2,11,findViewById(R.id.b26))//Аудитория 26
+        doWriteAudienceAtTextView(lessonNum2,12,findViewById(R.id.b31))//Аудитория 31
+        doWriteAudienceAtTextView(lessonNum2,13,findViewById(R.id.b32))//Аудитория 32
+        doWriteAudienceAtTextView(lessonNum2,14,findViewById(R.id.b33))//Аудитория 33
+        doWriteAudienceAtTextView(lessonNum2,15,findViewById(R.id.b34))//Аудитория 34
+        doWriteAudienceAtTextView(lessonNum2,16,findViewById(R.id.b35))//Аудитория 35
+        doWriteAudienceAtTextView(lessonNum2,17,findViewById(R.id.b36))//Аудитория 36
+        doWriteAudienceAtTextView(lessonNum2,18,findViewById(R.id.b41))//Аудитория 41
+        doWriteAudienceAtTextView(lessonNum2,19,findViewById(R.id.b42))//Аудитория 42
+        doWriteAudienceAtTextView(lessonNum2,20,findViewById(R.id.b43))//Аудитория 43
+        doWriteAudienceAtTextView(lessonNum2,21,findViewById(R.id.b44))//Аудитория 44
+        doWriteAudienceAtTextView(lessonNum2,22,findViewById(R.id.b45))//Аудитория 45
+        doWriteAudienceAtTextView(lessonNum2,23,findViewById(R.id.b46))//Аудитория 46
+        //Пара номер 3
+        doWriteAudienceAtTextView(lessonNum3,0,findViewById(R.id.c11)) //Аудитория 11
+        doWriteAudienceAtTextView(lessonNum3,1,findViewById(R.id.c12)) //Аудитория 12
+        doWriteAudienceAtTextView(lessonNum3,2,findViewById(R.id.c13)) //Аудитория 13
+        doWriteAudienceAtTextView(lessonNum3,3,findViewById(R.id.c14)) //Аудитория 14
+        doWriteAudienceAtTextView(lessonNum3,4,findViewById(R.id.c15)) //Аудитория 15
+        doWriteAudienceAtTextView(lessonNum3,5,findViewById(R.id.c16)) //Аудитория 16
+        doWriteAudienceAtTextView(lessonNum3,6,findViewById(R.id.c21)) //Аудитория 21
+        doWriteAudienceAtTextView(lessonNum3,7,findViewById(R.id.c22)) //Аудитория 22
+        doWriteAudienceAtTextView(lessonNum3,8,findViewById(R.id.c23)) //Аудитория 23
+        doWriteAudienceAtTextView(lessonNum3,9,findViewById(R.id.c24)) //Аудитория 24
+        doWriteAudienceAtTextView(lessonNum3,10,findViewById(R.id.c25))//Аудитория 25
+        doWriteAudienceAtTextView(lessonNum3,11,findViewById(R.id.c26))//Аудитория 26
+        doWriteAudienceAtTextView(lessonNum3,12,findViewById(R.id.c31))//Аудитория 31
+        doWriteAudienceAtTextView(lessonNum3,13,findViewById(R.id.c32))//Аудитория 32
+        doWriteAudienceAtTextView(lessonNum3,14,findViewById(R.id.c33))//Аудитория 33
+        doWriteAudienceAtTextView(lessonNum3,15,findViewById(R.id.c34))//Аудитория 34
+        doWriteAudienceAtTextView(lessonNum3,16,findViewById(R.id.c35))//Аудитория 35
+        doWriteAudienceAtTextView(lessonNum3,17,findViewById(R.id.c36))//Аудитория 36
+        doWriteAudienceAtTextView(lessonNum3,18,findViewById(R.id.c41))//Аудитория 41
+        doWriteAudienceAtTextView(lessonNum3,19,findViewById(R.id.c42))//Аудитория 42
+        doWriteAudienceAtTextView(lessonNum3,20,findViewById(R.id.c43))//Аудитория 43
+        doWriteAudienceAtTextView(lessonNum3,21,findViewById(R.id.c44))//Аудитория 44
+        doWriteAudienceAtTextView(lessonNum3,22,findViewById(R.id.c45))//Аудитория 45
+        doWriteAudienceAtTextView(lessonNum3,23,findViewById(R.id.c46))//Аудитория 46
+        //Пара номер 4
+        doWriteAudienceAtTextView(lessonNum4,0,findViewById(R.id.d11)) //Аудитория 11
+        doWriteAudienceAtTextView(lessonNum4,1,findViewById(R.id.d12)) //Аудитория 12
+        doWriteAudienceAtTextView(lessonNum4,2,findViewById(R.id.d13)) //Аудитория 13
+        doWriteAudienceAtTextView(lessonNum4,3,findViewById(R.id.d14)) //Аудитория 14
+        doWriteAudienceAtTextView(lessonNum4,4,findViewById(R.id.d15)) //Аудитория 15
+        doWriteAudienceAtTextView(lessonNum4,5,findViewById(R.id.d16)) //Аудитория 16
+        doWriteAudienceAtTextView(lessonNum4,6,findViewById(R.id.d21)) //Аудитория 21
+        doWriteAudienceAtTextView(lessonNum4,7,findViewById(R.id.d22)) //Аудитория 22
+        doWriteAudienceAtTextView(lessonNum4,8,findViewById(R.id.d23)) //Аудитория 23
+        doWriteAudienceAtTextView(lessonNum4,9,findViewById(R.id.d24)) //Аудитория 24
+        doWriteAudienceAtTextView(lessonNum4,10,findViewById(R.id.d25))//Аудитория 25
+        doWriteAudienceAtTextView(lessonNum4,11,findViewById(R.id.d26))//Аудитория 26
+        doWriteAudienceAtTextView(lessonNum4,12,findViewById(R.id.d31))//Аудитория 31
+        doWriteAudienceAtTextView(lessonNum4,13,findViewById(R.id.d32))//Аудитория 32
+        doWriteAudienceAtTextView(lessonNum4,14,findViewById(R.id.d33))//Аудитория 33
+        doWriteAudienceAtTextView(lessonNum4,15,findViewById(R.id.d34))//Аудитория 34
+        doWriteAudienceAtTextView(lessonNum4,16,findViewById(R.id.d35))//Аудитория 35
+        doWriteAudienceAtTextView(lessonNum4,17,findViewById(R.id.d36))//Аудитория 36
+        doWriteAudienceAtTextView(lessonNum4,18,findViewById(R.id.d41))//Аудитория 41
+        doWriteAudienceAtTextView(lessonNum4,19,findViewById(R.id.d42))//Аудитория 42
+        doWriteAudienceAtTextView(lessonNum4,20,findViewById(R.id.d43))//Аудитория 43
+        doWriteAudienceAtTextView(lessonNum4,21,findViewById(R.id.d44))//Аудитория 44
+        doWriteAudienceAtTextView(lessonNum4,22,findViewById(R.id.d45))//Аудитория 45
+        doWriteAudienceAtTextView(lessonNum4,23,findViewById(R.id.d46))//Аудитория 46
+        //Пара номер 5
+        doWriteAudienceAtTextView(lessonNum5,0,findViewById(R.id.e11)) //Аудитория 11
+        doWriteAudienceAtTextView(lessonNum5,1,findViewById(R.id.e12)) //Аудитория 12
+        doWriteAudienceAtTextView(lessonNum5,2,findViewById(R.id.e13)) //Аудитория 13
+        doWriteAudienceAtTextView(lessonNum5,3,findViewById(R.id.e14)) //Аудитория 14
+        doWriteAudienceAtTextView(lessonNum5,4,findViewById(R.id.e15)) //Аудитория 15
+        doWriteAudienceAtTextView(lessonNum5,5,findViewById(R.id.e16)) //Аудитория 16
+        doWriteAudienceAtTextView(lessonNum5,6,findViewById(R.id.e21)) //Аудитория 21
+        doWriteAudienceAtTextView(lessonNum5,7,findViewById(R.id.e22)) //Аудитория 22
+        doWriteAudienceAtTextView(lessonNum5,8,findViewById(R.id.e23)) //Аудитория 23
+        doWriteAudienceAtTextView(lessonNum5,9,findViewById(R.id.e24)) //Аудитория 24
+        doWriteAudienceAtTextView(lessonNum5,10,findViewById(R.id.e25))//Аудитория 25
+        doWriteAudienceAtTextView(lessonNum5,11,findViewById(R.id.e26))//Аудитория 26
+        doWriteAudienceAtTextView(lessonNum5,12,findViewById(R.id.e31))//Аудитория 31
+        doWriteAudienceAtTextView(lessonNum5,13,findViewById(R.id.e32))//Аудитория 32
+        doWriteAudienceAtTextView(lessonNum5,14,findViewById(R.id.e33))//Аудитория 33
+        doWriteAudienceAtTextView(lessonNum5,15,findViewById(R.id.e34))//Аудитория 34
+        doWriteAudienceAtTextView(lessonNum5,16,findViewById(R.id.e35))//Аудитория 35
+        doWriteAudienceAtTextView(lessonNum5,17,findViewById(R.id.e36))//Аудитория 36
+        doWriteAudienceAtTextView(lessonNum5,18,findViewById(R.id.e41))//Аудитория 41
+        doWriteAudienceAtTextView(lessonNum5,19,findViewById(R.id.e42))//Аудитория 42
+        doWriteAudienceAtTextView(lessonNum5,20,findViewById(R.id.e43))//Аудитория 43
+        doWriteAudienceAtTextView(lessonNum5,21,findViewById(R.id.e44))//Аудитория 44
+        doWriteAudienceAtTextView(lessonNum5,22,findViewById(R.id.e45))//Аудитория 45
+        doWriteAudienceAtTextView(lessonNum5,23,findViewById(R.id.e46))//Аудитория 46
+        //Пара номер 6
+        doWriteAudienceAtTextView(lessonNum6,0,findViewById(R.id.f11)) //Аудитория 11
+        doWriteAudienceAtTextView(lessonNum6,1,findViewById(R.id.f12)) //Аудитория 12
+        doWriteAudienceAtTextView(lessonNum6,2,findViewById(R.id.f13)) //Аудитория 13
+        doWriteAudienceAtTextView(lessonNum6,3,findViewById(R.id.f14)) //Аудитория 14
+        doWriteAudienceAtTextView(lessonNum6,4,findViewById(R.id.f15)) //Аудитория 15
+        doWriteAudienceAtTextView(lessonNum6,5,findViewById(R.id.f16)) //Аудитория 16
+        doWriteAudienceAtTextView(lessonNum6,6,findViewById(R.id.f21)) //Аудитория 21
+        doWriteAudienceAtTextView(lessonNum6,7,findViewById(R.id.f22)) //Аудитория 22
+        doWriteAudienceAtTextView(lessonNum6,8,findViewById(R.id.f23)) //Аудитория 23
+        doWriteAudienceAtTextView(lessonNum6,9,findViewById(R.id.f24)) //Аудитория 24
+        doWriteAudienceAtTextView(lessonNum6,10,findViewById(R.id.f25))//Аудитория 25
+        doWriteAudienceAtTextView(lessonNum6,11,findViewById(R.id.f26))//Аудитория 26
+        doWriteAudienceAtTextView(lessonNum6,12,findViewById(R.id.f31))//Аудитория 31
+        doWriteAudienceAtTextView(lessonNum6,13,findViewById(R.id.f32))//Аудитория 32
+        doWriteAudienceAtTextView(lessonNum6,14,findViewById(R.id.f33))//Аудитория 33
+        doWriteAudienceAtTextView(lessonNum6,15,findViewById(R.id.f34))//Аудитория 34
+        doWriteAudienceAtTextView(lessonNum6,16,findViewById(R.id.f35))//Аудитория 35
+        doWriteAudienceAtTextView(lessonNum6,17,findViewById(R.id.f36))//Аудитория 36
+        doWriteAudienceAtTextView(lessonNum6,18,findViewById(R.id.f41))//Аудитория 41
+        doWriteAudienceAtTextView(lessonNum6,19,findViewById(R.id.f42))//Аудитория 42
+        doWriteAudienceAtTextView(lessonNum6,20,findViewById(R.id.f43))//Аудитория 43
+        doWriteAudienceAtTextView(lessonNum6,21,findViewById(R.id.f44))//Аудитория 44
+        doWriteAudienceAtTextView(lessonNum6,22,findViewById(R.id.f45))//Аудитория 45
+        doWriteAudienceAtTextView(lessonNum6,23,findViewById(R.id.f46))//Аудитория 46
+
+        //Добавляет textView событые двойного клика
+        addObrEvenForBtn()
     }
 }
